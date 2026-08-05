@@ -67,7 +67,7 @@
     {{-- POSTS GRID --}}
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
       @foreach($postsList as $post)
-        <a href="{{ route('blog.index') }}"
+        <a href="{{ isset($post->id) ? route('blog.show', $post->slug) : route('blog.index') }}"
            class="group bg-white rounded-3xl overflow-hidden border border-[#0B332B]/10 shadow-sm hover:shadow-xl hover:border-[#F5850F]/50 transition-all duration-300 flex flex-col justify-between">
           
           <div>
