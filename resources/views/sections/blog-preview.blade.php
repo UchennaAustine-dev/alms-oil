@@ -11,8 +11,8 @@
       'category' => 'Regulatory & Policy',
       'published_at' => now()->subDays(3),
       'read_time' => '5 min read',
-      // Nigerian regulatory / legal / policy — government legislation
-      'image' => 'https://images.unsplash.com/photo-1450101499163-c8848c66ca85?w=700&q=85&auto=format&fit=crop'
+      // Nigerian business/legal — professional desk setting
+      'image' => 'https://images.pexels.com/photos/5668882/pexels-photo-5668882.jpeg?auto=compress&cs=tinysrgb&w=700&q=85'
     ],
     (object)[
       'title' => 'Optimizing Commercial Fleet Fuel Logistics Across All 36 Nigerian States',
@@ -20,8 +20,8 @@
       'category' => 'Logistics & Fleet',
       'published_at' => now()->subDays(7),
       'read_time' => '4 min read',
-      // Fleet of trucks on highway — logistics
-      'image' => 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=85&auto=format&fit=crop'
+      // Trucks on road — universal haulage / fleet
+      'image' => 'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=700&q=85'
     ],
     (object)[
       'title' => 'Bulk Fuel Quality Assurance: Preventing Contamination in Generator Supplies',
@@ -29,8 +29,8 @@
       'category' => 'Quality Assurance',
       'published_at' => now()->subDays(12),
       'read_time' => '6 min read',
-      // Laboratory quality testing / chemical analysis
-      'image' => 'https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=85&auto=format&fit=crop'
+      // Black scientist / lab technician — quality testing
+      'image' => 'https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=700&q=85'
     ],
   ]);
 @endphp

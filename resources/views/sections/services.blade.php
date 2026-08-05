@@ -39,8 +39,8 @@
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
         <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
-            {{-- Petroleum products — oil barrels, storage, fuel loading --}}
-            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=85&auto=format&fit=crop"
+            {{-- Petroleum storage tanks / depot --}}
+            <img src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=600&q=85"
                  alt="Petroleum Supply & Trading" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
             <span class="absolute top-3 left-3 bg-[#0B332B]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#F5850F]">
               01 · Petroleum Supply
@@ -76,8 +76,8 @@
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
         <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
-            {{-- Oil tanker truck / highway haulage --}}
-            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=85&auto=format&fit=crop"
+            {{-- Tanker trucks on African road --}}
+            <img src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=600&q=85"
                  alt="Logistics & Fleet Haulage" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
             <span class="absolute top-3 left-3 bg-[#0B332B]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#F5850F]">
               02 · Logistics
@@ -113,8 +113,8 @@
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
         <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
-            {{-- Industrial engineer / maintenance worker in hard hat --}}
-            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=85&auto=format&fit=crop"
+            {{-- Black engineer in hard hat at industrial site --}}
+            <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=600&q=85"
                  alt="Engineering Services" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
             <span class="absolute top-3 left-3 bg-[#0B332B]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#F5850F]">
               03 · Engineering
@@ -150,8 +150,8 @@
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
         <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
-            {{-- Oil refinery / tank farm / infrastructure aerial --}}
-            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&q=85&auto=format&fit=crop"
+            {{-- Oil refinery / pipeline infrastructure --}}
+            <img src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=600&q=85"
                  alt="Energy Infrastructure" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
             <span class="absolute top-3 left-3 bg-[#0B332B]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#F5850F]">
               04 · Infrastructure

@@ -46,10 +46,10 @@
           </div>
         </div>
 
-        {{-- Bottom-Left Card: Fuel quality lab / petroleum testing --}}
+        {{-- Bottom-Left Card: African lab technician / quality testing --}}
         <div class="relative rounded-3xl overflow-hidden shadow-xl border-2 border-white h-[240px] sm:h-[280px]">
-          {{-- Scientist/lab testing petroleum products --}}
-          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=700&q=85&auto=format&fit=crop"
+          {{-- Black female scientist in lab — quality assurance --}}
+          <img src="https://images.pexels.com/photos/3862130/pexels-photo-3862130.jpeg?auto=compress&cs=tinysrgb&w=700&q=85"
                alt="Petroleum Quality Assurance Laboratory Testing"
                class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"/>
           <div class="absolute inset-0 bg-gradient-to-t from-[#0B332B]/85 via-transparent to-transparent"></div>
@@ -72,9 +72,9 @@
           <p class="text-sm sm:text-base font-bold text-white">On-Time Delivery Rate</p>
         </div>
 
-        {{-- Middle Photo Frame: GPS fleet / tanker trucks on highway --}}
+        {{-- Middle Photo Frame: fleet of trucks on a Nigerian/African road --}}
         <div class="relative my-4 sm:my-6 rounded-2xl overflow-hidden shadow-lg h-[200px] sm:h-[250px] border border-white/20">
-          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=85&auto=format&fit=crop"
+          <img src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=700&q=85"
                alt="GPS Tracked Petroleum Tanker Fleet Haulage"
                class="w-full h-full object-cover object-center"/>
           <div class="absolute inset-0 bg-gradient-to-t from-[#0B332B]/90 via-[#0B332B]/20 to-transparent"></div>
@@ -95,9 +95,9 @@
       {{-- ── RIGHT COLUMN (Top Photo + Bottom Deliveries Card) ── --}}
       <div class="flex flex-col gap-5 sm:gap-6 lg:gap-8 justify-between">
 
-        {{-- Top-Right Card: Tank farm / oil storage infrastructure --}}
+        {{-- Top-Right Card: Oil refinery / pipeline infrastructure --}}
         <div class="relative rounded-3xl overflow-hidden shadow-xl border-2 border-white h-[240px] sm:h-[280px]">
-          <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?w=700&q=85&auto=format&fit=crop"
+          <img src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=700&q=85"
                alt="Oil Infrastructure & Tank Farm Terminals"
                class="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"/>
           <div class="absolute inset-0 bg-gradient-to-t from-[#0B332B]/85 via-transparent to-transparent"></div>

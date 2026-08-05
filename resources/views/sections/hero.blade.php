@@ -106,11 +106,10 @@
           {{-- Main Hero Image --}}
           <div class="relative h-[320px] sm:h-[450px] lg:h-[480px] w-full overflow-hidden">
             {{-- 
-              Tab 1 — Supply: Oil tanker truck on highway at golden hour
-              Photo by Quintin Gellar on Pexels — petroleum tanker truck
+              Tab 1 — Supply: Large petroleum storage tanks / depot — universal industrial
             --}}
             <img id="hero-dynamic-img"
-                 src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85&auto=format&fit=crop"
+                 src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=900&q=85"
                  alt="Alms Oil Petroleum Fuel Supply Operations"
                  class="w-full h-full object-cover object-center transition-all duration-700 transform scale-100" />
             
@@ -119,17 +118,17 @@
 
             {{-- Interactive Image Selector Pills --}}
             <div class="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 flex items-center gap-1 bg-black/50 backdrop-blur-md p-1 rounded-full border border-white/20">
-              <button onclick="switchHeroTab('supply', 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=900&q=85&auto=format&fit=crop', 'Petroleum Fuel Supply Operations')"
+              <button onclick="switchHeroTab('supply', 'https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=900&q=85', 'Petroleum Fuel Supply Operations')"
                       id="tab-btn-supply"
                       class="hero-tab-btn px-2.5 sm:px-3 py-1 text-[10px] sm:text-[11px] font-bold rounded-full transition-all bg-[#F5850F] text-white">
                 Supply
               </button>
-              <button onclick="switchHeroTab('haulage', 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=85&auto=format&fit=crop', 'GPS Tanker Fleet Haulage Logistics')"
+              <button onclick="switchHeroTab('haulage', 'https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=900&q=85', 'GPS Tanker Fleet Haulage Logistics')"
                       id="tab-btn-haulage"
                       class="hero-tab-btn px-2.5 sm:px-3 py-1 text-[10px] sm:text-[11px] font-bold rounded-full transition-all text-white/80 hover:text-white">
                 Haulage
               </button>
-              <button onclick="switchHeroTab('infra', 'https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=900&q=85&auto=format&fit=crop', 'Energy Infrastructure &amp; Tank Farms')"
+              <button onclick="switchHeroTab('infra', 'https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=900&q=85', 'Energy Infrastructure &amp; Tank Farms')"
                       id="tab-btn-infra"
                       class="hero-tab-btn px-2.5 sm:px-3 py-1 text-[10px] sm:text-[11px] font-bold rounded-full transition-all text-white/80 hover:text-white">
                 Infrastructure
@@ -201,8 +200,8 @@
         <a href="{{ route('services.petroleum') }}"
            class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
           <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-            {{-- Petroleum supply / oil product barrels --}}
-            <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=120&q=80&auto=format&fit=crop"
+            {{-- Petroleum storage tanks — universal industrial --}}
+            <img src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
                  alt="Petroleum Supply" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
           </div>
           <div class="min-w-0">
@@ -215,8 +214,8 @@
         <a href="{{ route('services.logistics') }}"
            class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
           <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-            {{-- Truck haulage / logistics highway --}}
-            <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=120&q=80&auto=format&fit=crop"
+            {{-- Tanker trucks on road — haulage logistics --}}
+            <img src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
                  alt="Haulage & Logistics" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
           </div>
           <div class="min-w-0">
@@ -229,8 +228,8 @@
         <a href="{{ route('services.infrastructure') }}"
            class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
           <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-            {{-- Oil storage tanks / tank farm --}}
-            <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=120&q=80&auto=format&fit=crop"
+            {{-- Oil refinery infrastructure / pipework --}}
+            <img src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
                  alt="Energy Infrastructure" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
           </div>
           <div class="min-w-0">
@@ -243,8 +242,8 @@
         <a href="{{ route('services.engineering') }}"
            class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
           <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-            {{-- Industrial engineer / maintenance worker --}}
-            <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=120&q=80&auto=format&fit=crop"
+            {{-- Black engineer / industrial worker — African context --}}
+            <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
                  alt="Engineering Services" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"/>
           </div>
           <div class="min-w-0">

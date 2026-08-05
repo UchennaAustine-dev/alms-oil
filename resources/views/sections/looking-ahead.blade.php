@@ -12,7 +12,7 @@
   {{-- ════════════════════════════════════
        PART 1 — CINEMATIC IMAGE + GIANT TEXT
   ════════════════════════════════════ --}}
-  <div class="relative" style="min-height:85vh">
+  <div class="relative" style="min-height:75vh">
 
     {{-- Full-bleed background photo --}}
     <div class="absolute inset-0 z-0">
@@ -32,53 +32,45 @@
     </div>
 
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12
-                pt-16 sm:pt-20 lg:pt-24 pb-0 flex flex-col justify-between"
-         style="min-height:85vh">
+                pt-12 sm:pt-16 lg:pt-24 pb-6 flex flex-col justify-between"
+         style="min-height:75vh">
 
       {{-- ── Top: overline + body copy ── --}}
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-auto">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-16 mb-auto">
 
         <div>
-          <div class="flex items-center gap-2.5 mb-5">
+          <div class="flex items-center gap-2.5 mb-4 sm:mb-5">
             <div class="w-5 h-px bg-[#F5850F]"></div>
             <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-[#F5850F]">
               Looking Ahead · 2025 &amp; Beyond
             </span>
           </div>
-          <p class="text-white/65 text-base sm:text-lg leading-relaxed max-w-md">
+          <p class="text-white/65 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md">
             Nigeria is entering a new era of industrial growth. Alms Oil is committed to being at the forefront — through disciplined operations, long-term partnerships, and uncompromised delivery.
           </p>
         </div>
 
-        {{-- Floating metric cards — top right --}}
+        {{-- Floating metric cards — responsive wrap on mobile --}}
         <div class="flex flex-wrap gap-3 lg:justify-end items-start">
 
           <div class="backdrop-blur-md bg-white/10 border border-white/20
-                      rounded-2xl px-5 py-4 text-white min-w-[120px]">
-            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">
-              Volume
-            </p>
-            <p class="font-display font-black text-2xl sm:text-3xl leading-none">850M+</p>
+                      rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white min-w-[100px]">
+            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">Volume</p>
+            <p class="font-display font-black text-xl sm:text-3xl leading-none">850M+</p>
             <p class="text-[10px] text-white/45 mt-0.5">Litres delivered</p>
           </div>
 
           <div class="backdrop-blur-md bg-white/10 border border-white/20
-                      rounded-2xl px-5 py-4 text-white min-w-[110px]">
-            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">
-              Coverage
-            </p>
-            <p class="font-display font-black text-2xl sm:text-3xl leading-none text-[#F5850F]">
-              36
-            </p>
+                      rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white min-w-[90px]">
+            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">Coverage</p>
+            <p class="font-display font-black text-xl sm:text-3xl leading-none text-[#F5850F]">36</p>
             <p class="text-[10px] text-white/45 mt-0.5">States</p>
           </div>
 
           <div class="backdrop-blur-md bg-[#F5850F]/20 border border-[#F5850F]/30
-                      rounded-2xl px-5 py-4 text-white min-w-[110px]">
-            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">
-              On-Time
-            </p>
-            <p class="font-display font-black text-2xl sm:text-3xl leading-none">98.5%</p>
+                      rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white min-w-[100px]">
+            <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">On-Time</p>
+            <p class="font-display font-black text-xl sm:text-3xl leading-none">98.5%</p>
             <p class="text-[10px] text-white/45 mt-0.5">Delivery rate</p>
           </div>
 
@@ -86,14 +78,12 @@
       </div>
 
       {{-- ── GIANT OUTLINED HEADLINE — the "woah" element ── --}}
-      {{-- Sits at the bottom of the image, half in / half creating depth --}}
-      <div class="mt-12 sm:mt-16 overflow-hidden" id="la-headline">
-        <div class="font-display font-black text-transparent leading-[0.85] tracking-tight
-                    select-none whitespace-nowrap"
-             style="
-               font-size:clamp(4.5rem,13vw,12rem);
-               -webkit-text-stroke: 1.5px rgba(255,255,255,0.28);
-             ">
+      <div class="mt-10 sm:mt-14 w-full" id="la-headline">
+        <div class="font-display font-black text-transparent leading-[0.88] tracking-tight select-none"
+             style="-webkit-text-stroke: 1.5px rgba(255,255,255,0.28);
+                    font-size:clamp(2.4rem,7vw,10.5rem);
+                    word-break:break-word;
+                    overflow-wrap:break-word;">
           Nigeria's&nbsp;<span style="-webkit-text-stroke:1.5px rgba(245,133,15,0.55)">Future.</span>
         </div>
       </div>
@@ -200,21 +190,29 @@
 
 </section>
 
-{{-- ── Headline parallax scroll effect ── --}}
+{{-- ── Headline parallax scroll effect (desktop only) ── --}}
 <script>
 (function () {
   var headline = document.getElementById('la-headline');
   if (!headline) return;
 
+  // Only run parallax on screens wide enough that the text won't overflow
   function onScroll() {
+    if (window.innerWidth < 768) {
+      headline.style.transform = 'translateX(0)';
+      return;
+    }
     var rect = headline.closest('section').getBoundingClientRect();
     if (rect.bottom < 0 || rect.top > window.innerHeight) return;
     var progress = 1 - (rect.bottom / (window.innerHeight + rect.height));
-    var translateX = progress * -80; // shift left as you scroll down
+    var translateX = progress * -60;
     headline.style.transform = 'translateX(' + translateX + 'px)';
   }
 
   window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', function() {
+    if (window.innerWidth < 768) headline.style.transform = 'translateX(0)';
+  });
   onScroll();
 }());
 </script>
