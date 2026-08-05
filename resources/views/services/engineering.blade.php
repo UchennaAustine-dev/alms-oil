@@ -7,7 +7,7 @@
 {{-- HERO --}}
 <section class="relative overflow-hidden bg-[#0B332B]" style="min-height:82vh">
   <div class="absolute inset-0 z-0">
-    <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=1600&q=80&auto=format&fit=crop"
+    <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
          alt="Industrial engineer at work"
          class="w-full h-full object-cover object-center"
          style="filter:saturate(0.6) brightness(0.38) contrast(1.1)" />
@@ -163,7 +163,7 @@
 
       <div class="relative srv-reveal">
         <div class="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-[#0B332B]/20 border-4 border-white">
-          <img src="https://images.unsplash.com/photo-1581093458791-9d58e74010b8?w=900&q=85&auto=format&fit=crop"
+          <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=900&q=85"
                alt="Engineering team at petroleum facility"
                class="w-full h-[280px] sm:h-[380px] lg:h-[460px] object-cover object-center" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#0B332B]/40 to-transparent rounded-2xl sm:rounded-3xl"></div>

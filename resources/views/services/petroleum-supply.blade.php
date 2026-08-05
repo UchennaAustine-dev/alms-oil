@@ -10,7 +10,7 @@
 <section class="relative overflow-hidden bg-[#0B332B]" style="min-height:82vh">
 
   <div class="absolute inset-0 z-0">
-    <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=1600&q=80&auto=format&fit=crop"
+    <img src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
          alt="Petroleum storage tanks"
          class="w-full h-full object-cover object-center"
          style="filter:saturate(0.65) brightness(0.4) contrast(1.1)" />
@@ -161,7 +161,7 @@
 
       <div class="relative srv-reveal order-2 lg:order-1">
         <div class="rounded-2xl sm:rounded-3xl overflow-hidden shadow-2xl shadow-[#0B332B]/20 border-4 border-white">
-          <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=900&q=85&auto=format&fit=crop"
+          <img src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=900&q=85"
                alt="Petroleum tanker fleet dispatch"
                class="w-full h-[280px] sm:h-[380px] lg:h-[460px] object-cover object-center" />
           <div class="absolute inset-0 bg-gradient-to-t from-[#0B332B]/50 to-transparent rounded-2xl sm:rounded-3xl"></div>

@@ -7,7 +7,7 @@
 {{-- HERO --}}
 <section class="relative overflow-hidden bg-[#0B332B]" style="min-height:82vh">
   <div class="absolute inset-0 z-0">
-    <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1600&q=80&auto=format&fit=crop"
+    <img src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
          alt="Petroleum tanker truck on highway"
          class="w-full h-full object-cover object-center"
          style="filter:saturate(0.65) brightness(0.38) contrast(1.1)" />

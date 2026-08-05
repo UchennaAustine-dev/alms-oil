@@ -73,7 +73,7 @@
           <div>
             {{-- Stock Image Thumbnail --}}
             <div class="relative h-48 overflow-hidden bg-[#0B332B]">
-              <img src="{{ $post->image ?? 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=700&q=85&auto=format&fit=crop' }}"
+              <img src="{{ $post->image ?? 'https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=700&q=85' }}"
                    alt="{{ $post->title }}"
                    class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"/>
               <span class="absolute top-3 left-3 bg-[#0B332B]/90 backdrop-blur-md px-3 py-1 rounded-full text-[10px] font-bold text-[#F5850F] border border-white/10">

@@ -23,7 +23,7 @@
            class="w-full h-full object-cover object-center"
            style="filter:saturate(0.65) brightness(0.38) contrast(1.08)" />
     @else
-      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1600&q=80&auto=format&fit=crop"
+      <img src="https://images.pexels.com/photos/3888149/pexels-photo-3888149.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
            alt="{{ $post->title }}"
            class="w-full h-full object-cover object-center"
            style="filter:saturate(0.65) brightness(0.38) contrast(1.08)" />
@@ -236,7 +236,7 @@
                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                            style="filter:brightness(0.8) saturate(0.7)" />
                     @else
-                      <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=160&q=70&auto=format&fit=crop"
+                      <img src="https://images.pexels.com/photos/3888149/pexels-photo-3888149.jpeg?auto=compress&cs=tinysrgb&w=160&q=70"
                            alt="{{ $r->title }}"
                            class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
                            style="filter:brightness(0.7) saturate(0.6)" />
