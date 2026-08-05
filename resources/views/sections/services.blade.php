@@ -37,7 +37,7 @@
 
       {{-- Card 1 — Petroleum Supply & Trading --}}
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
+        <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
             {{-- Petroleum products — oil barrels, storage, fuel loading --}}
             <img src="https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?w=600&q=85&auto=format&fit=crop"
@@ -74,7 +74,7 @@
 
       {{-- Card 2 — Logistics & Fleet Haulage --}}
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
+        <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
             {{-- Oil tanker truck / highway haulage --}}
             <img src="https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=600&q=85&auto=format&fit=crop"
@@ -111,7 +111,7 @@
 
       {{-- Card 3 — Engineering & Industrial --}}
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
+        <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
             {{-- Industrial engineer / maintenance worker in hard hat --}}
             <img src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?w=600&q=85&auto=format&fit=crop"
@@ -148,7 +148,7 @@
 
       {{-- Card 4 — Energy Infrastructure --}}
       <div class="group bg-white rounded-3xl p-5 sm:p-6 border border-[#0B332B]/10 hover:border-[#F5850F] shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-        <div class="space-y-4">
+        <div class="space-y-2">
           <div class="relative h-44 sm:h-48 rounded-2xl overflow-hidden bg-[#0B332B]">
             {{-- Oil refinery / tank farm / infrastructure aerial --}}
             <img src="https://images.unsplash.com/photo-1611273426858-450d8e3c9fce?w=600&q=85&auto=format&fit=crop"
