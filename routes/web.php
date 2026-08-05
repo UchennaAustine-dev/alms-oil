@@ -74,3 +74,10 @@ Route::prefix('admin')->name('admin.')->middleware('admin.auth')->group(function
     Route::get('settings', [Admin\SettingController::class, 'index'])->name('settings.index');
     Route::post('settings', [Admin\SettingController::class, 'update'])->name('settings.update');
 });
+
+// ─── TEMPORARY: Run Migrations ───────────────────────────────────────────────
+// ⚠️  REMOVE THIS ROUTE AFTER USE — it is publicly accessible!
+Route::get('/run-migrations', function () {
+    \Illuminate\Support\Facades\Artisan::call('migrate', ['--force' => true]);
+    return 'Database tables created successfully!';
+});
