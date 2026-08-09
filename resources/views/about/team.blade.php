@@ -1,9 +1,9 @@
 @php
   $aboutTeam = [
-    ['Chief Executive Officer','Energy Strategy & Downstream Operations','Leads Alms Oil\'s strategic vision with 20+ years in Nigerian petroleum downstream, including senior roles at NNPC subsidiaries.','https://images.pexels.com/photos/2182970/pexels-photo-2182970.jpeg?auto=compress&cs=tinysrgb&w=600','AO'],
-    ['Director of Operations','Logistics & Fleet Management','Oversees the entire GPS-tracked tanker fleet and depot operations, ensuring every delivery meets our 98.5% on-time benchmark.','https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600','DL'],
-    ['Technical Director','HSE & Quality Assurance','Champions our ISO 9001 quality framework and all HSE protocols across tank farm, fleet, and customer site operations.','https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=600','TD'],
-    ['Commercial Director','Business Development & Trade','Manages our national commercial partnerships, bulk trading relationships, and West African market expansion.','https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=600','CD'],
+    ['Chief Executive Officer','Energy Strategy & Downstream Operations','Leads Alms Oil\'s strategic vision with 20+ years in Nigerian petroleum downstream, including senior roles at NNPC subsidiaries.','https://images.pexels.com/photos/34687890/pexels-photo-34687890.jpeg?auto=compress&cs=tinysrgb&w=600&q=85','AO'],
+    ['Director of Operations','Logistics & Fleet Management','Oversees the entire GPS-tracked tanker fleet and depot operations, ensuring every delivery meets our 98.5% on-time benchmark.','https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=600&q=80','DL'],
+    ['Technical Director','HSE & Quality Assurance','Champions our ISO 9001 quality framework and all HSE protocols across tank farm, fleet, and customer site operations.','https://images.pexels.com/photos/8487795/pexels-photo-8487795.jpeg?auto=compress&cs=tinysrgb&w=600&q=85','TD'],
+    ['Commercial Director','Business Development & Trade','Manages our national commercial partnerships, bulk trading relationships, and West African market expansion.','https://images.pexels.com/photos/34690061/pexels-photo-34690061.jpeg?auto=compress&cs=tinysrgb&w=600&q=85','CD'],
   ];
 @endphp
 <section class="bg-[#FAFAF8] py-20 sm:py-28">
