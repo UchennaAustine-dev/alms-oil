@@ -13,74 +13,37 @@
       </a>
 
       {{-- ── Desktop Nav Links ── --}}
-      <nav class="hidden md:flex items-center gap-8 text-sm font-bold text-[#2A2A2A]">
-        
-        <a href="{{ route('home') }}"
-           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('home') ? 'text-[#F5850F]' : '' }}">
-          Home
+      <nav class="hidden md:flex items-center gap-5 text-sm font-bold text-[#2A2A2A]">
+
+        <a href="{{ route('services.petroleum') }}"
+           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('services.petroleum') ? 'text-[#F5850F]' : '' }}">
+          Petroleum Supply
         </a>
 
-        <a href="{{ route('about') }}"
-           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('about') ? 'text-[#F5850F]' : '' }}">
-          About Us
+        <a href="{{ route('services.logistics') }}"
+           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('services.logistics') ? 'text-[#F5850F]' : '' }}">
+          Logistics
         </a>
 
-        {{-- Dropdown --}}
-        <div class="relative group">
-          <button class="flex items-center gap-1.5 hover:text-[#F5850F] transition-colors cursor-pointer py-2 {{ request()->routeIs('services.*') ? 'text-[#F5850F]' : '' }}">
-            <span>Services</span>
-            <svg class="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180 text-[#0B332B]"
-                 fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
-            </svg>
-          </button>
-          
-          {{-- Dropdown menu card --}}
-          <div class="absolute top-full left-0 mt-1 w-64 bg-white rounded-2xl border border-[#0B332B]/10 shadow-2xl shadow-[#0B332B]/15
-                      opacity-0 invisible translate-y-2
-                      group-hover:opacity-100 group-hover:visible group-hover:translate-y-0
-                      transition-all duration-200 z-50 p-2">
-            @foreach([
-              ['Petroleum Supply & Trading', 'Sourcing & Bulk Trading', route('services.petroleum')],
-              ['Logistics & Haulage', 'GPS-tracked Fleet',           route('services.logistics')],
-              ['Engineering Services', 'Installation & Maintenance',   route('services.engineering')],
-              ['Energy Infrastructure', 'Tank Farms & Stations',     route('services.infrastructure')],
-            ] as [$title, $sub, $route])
-              <a href="{{ $route }}"
-                 class="block px-3.5 py-2.5 rounded-xl hover:bg-[#0B332B]/5 transition-colors group/item">
-                <p class="text-xs font-bold text-[#0B332B] group-hover/item:text-[#F5850F] transition-colors">{{ $title }}</p>
-                <p class="text-[11px] text-[#2A2A2A]/50 mt-0.5">{{ $sub }}</p>
-              </a>
-            @endforeach
-          </div>
-        </div>
+        <a href="{{ route('services.engineering') }}"
+           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('services.engineering') ? 'text-[#F5850F]' : '' }}">
+          Engineering Services
+        </a>
+
+        <a href="{{ route('services.infrastructure') }}"
+           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('services.infrastructure') ? 'text-[#F5850F]' : '' }}">
+          Energy Infrastructure
+        </a>
 
         <a href="{{ route('blog.index') }}"
            class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('blog.*') ? 'text-[#F5850F]' : '' }}">
           Insights
         </a>
 
-        <a href="{{ route('contact') }}"
-           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('contact') ? 'text-[#F5850F]' : '' }}">
-          Contact
-        </a>
-
       </nav>
 
       {{-- ── Right Action Group ── --}}
       <div class="hidden md:flex items-center gap-4">
-        
-        {{-- Direct Phone Link --}}
-        <a href="tel:+2348002567645" class="flex items-center gap-2 text-xs font-bold text-[#0B332B] hover:text-[#F5850F] transition-colors">
-          <div class="w-8 h-8 rounded-full bg-[#0B332B]/8 flex items-center justify-center">
-            <svg class="w-4 h-4 text-[#F5850F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
-            </svg>
-          </div>
-          <span>0700-ALMSOIL</span>
-        </a>
-
-        {{-- Quote Button --}}
         <button data-open-quote
                 class="inline-flex items-center gap-2 bg-[#0B332B] hover:bg-[#F5850F] text-white
                        font-bold text-xs uppercase tracking-wider
@@ -136,28 +99,17 @@
   </div>
 
   <nav class="flex-1 overflow-y-auto px-6 py-6 space-y-4">
-    <a href="{{ route('home') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Home</a>
-    <a href="{{ route('about') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">About Us</a>
-    
-    <div class="pt-2 pb-2 border-y border-[#0B332B]/8 space-y-2">
-      <p class="text-[11px] font-extrabold uppercase tracking-widest text-[#F5850F]">Our Services</p>
-      <a href="{{ route('services.petroleum') }}" class="block text-sm font-semibold text-[#2A2A2A] hover:text-[#F5850F]">Petroleum Supply &amp; Trading</a>
-      <a href="{{ route('services.logistics') }}" class="block text-sm font-semibold text-[#2A2A2A] hover:text-[#F5850F]">Logistics &amp; Fleet Haulage</a>
-      <a href="{{ route('services.engineering') }}" class="block text-sm font-semibold text-[#2A2A2A] hover:text-[#F5850F]">Engineering &amp; Maintenance</a>
-      <a href="{{ route('services.infrastructure') }}" class="block text-sm font-semibold text-[#2A2A2A] hover:text-[#F5850F]">Energy Infrastructure</a>
-    </div>
-
+    <a href="{{ route('services.petroleum') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Petroleum Supply</a>
+    <a href="{{ route('services.logistics') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Logistics</a>
+    <a href="{{ route('services.engineering') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Engineering Services</a>
+    <a href="{{ route('services.infrastructure') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Energy Infrastructure</a>
     <a href="{{ route('blog.index') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Insights</a>
-    <a href="{{ route('contact') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Contact Us</a>
   </nav>
 
-  <div class="p-6 border-t border-[#0B332B]/10 space-y-3">
+  <div class="p-6 border-t border-[#0B332B]/10">
     <button data-open-quote class="w-full py-3.5 bg-[#F5850F] text-white font-bold text-xs uppercase tracking-wider rounded-full shadow-md text-center">
       Request Supply Quote
     </button>
-    <a href="tel:+2348002567645" class="block text-center text-xs font-bold text-[#0B332B]">
-      📞 Hotline: 0700-ALMSOIL
-    </a>
   </div>
 
 </aside>
