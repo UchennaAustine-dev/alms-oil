@@ -44,25 +44,25 @@
 
       {{-- ── Right Action Group ── --}}
       <div class="hidden md:flex items-center gap-4">
-        <button data-open-quote
-                class="inline-flex items-center gap-2 bg-[#0B332B] hover:bg-[#F5850F] text-white
-                       font-bold text-xs uppercase tracking-wider
-                       px-5 py-3 rounded-full
-                       shadow-md hover:shadow-lg hover:shadow-[#F5850F]/20
-                       transition-all duration-200 cursor-pointer">
-          <span>Request Quote</span>
+        <a href="{{ route('contact') }}"
+           class="inline-flex items-center gap-2 bg-[#0B332B] hover:bg-[#F5850F] text-white
+                  font-bold text-xs uppercase tracking-wider
+                  px-5 py-3 rounded-full
+                  shadow-md hover:shadow-lg hover:shadow-[#F5850F]/20
+                  transition-all duration-200">
+          <span>Contact Us</span>
           <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
             <path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
           </svg>
-        </button>
+        </a>
       </div>
 
       {{-- ── Mobile controls ── --}}
       <div class="flex items-center gap-3 md:hidden">
-        <button data-open-quote
-                class="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-[#F5850F] text-white rounded-full shadow-sm">
-          Quote
-        </button>
+        <a href="{{ route('contact') }}"
+           class="px-4 py-2 text-xs font-bold uppercase tracking-wider bg-[#F5850F] text-white rounded-full shadow-sm">
+          Contact
+        </a>
         <button id="nav-toggle"
                 aria-label="Toggle navigation"
                 class="p-2 rounded-xl text-[#0B332B] hover:bg-[#0B332B]/8 transition-colors">
@@ -107,9 +107,9 @@
   </nav>
 
   <div class="p-6 border-t border-[#0B332B]/10">
-    <button data-open-quote class="w-full py-3.5 bg-[#F5850F] text-white font-bold text-xs uppercase tracking-wider rounded-full shadow-md text-center">
-      Request Supply Quote
-    </button>
+    <a href="{{ route('contact') }}" class="block w-full py-3.5 bg-[#F5850F] text-white font-bold text-xs uppercase tracking-wider rounded-full shadow-md text-center">
+      Contact Us
+    </a>
   </div>
 
 </aside>

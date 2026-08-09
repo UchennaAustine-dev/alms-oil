@@ -1,24 +1,74 @@
 @extends('layouts.app')
 @section('title', 'Contact Us | Alms Oil Nigeria Limited')
+@section('description', 'Speak with the Alms Oil commercial desk about petroleum supply, haulage, engineering, or energy infrastructure. Lagos and Abuja coverage, Mon–Sat 7am–9pm.')
 
 @section('content')
 
 {{-- ── Hero ── --}}
-<section class="bg-white border-b border-[#0B332B]/8 pt-10 sm:pt-14 pb-12 sm:pb-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-    <div class="flex items-center gap-2.5 mb-5">
-      <div class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></div>
-      <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-[#F5850F]">Get In Touch</span>
+<section class="relative overflow-hidden bg-[#0B332B]" style="min-height:78vh">
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=85"
+         alt="Alms Oil commercial team partnership"
+         class="w-full h-full object-cover object-center"
+         style="filter:saturate(0.7) brightness(0.4) contrast(1.08)" />
+    <div class="absolute inset-0"
+         style="background:linear-gradient(135deg,rgba(11,51,43,0.88) 0%,rgba(11,51,43,0.5) 55%,rgba(11,51,43,0.75) 100%)"></div>
+  </div>
+  <div class="absolute inset-0 z-[1] pointer-events-none opacity-[0.15]"
+       style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%224%22 stitchTiles=%22stitch%22/><feColorMatrix type=%22saturate%22 values=%220%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.04%22/></svg>');background-size:200px"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex flex-col justify-between" style="min-height:78vh">
+    <div class="pt-8 sm:pt-10 flex items-center gap-2 text-[11px] text-white/40 font-medium flex-wrap">
+      <a href="{{ route('home') }}" class="hover:text-white/70 transition-colors">Home</a>
+      <span>/</span>
+      <span class="text-white/65">Contact Us</span>
     </div>
-    <h1 class="font-display font-bold text-[#0B332B] leading-[0.9] tracking-tight"
-        style="font-size:clamp(2.4rem,5vw,4.5rem)">
-      Contact<br/><span style="color:#F5850F">Alms Oil.</span>
-    </h1>
+
+    <div class="py-12 sm:py-16 lg:py-20">
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-2.5 mb-5 sm:mb-6">
+          <div class="w-5 h-px bg-[#F5850F]"></div>
+          <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-[#F5850F]">Get In Touch</span>
+        </div>
+        <h1 class="font-display font-bold text-white leading-[0.9] tracking-tight mb-6 sm:mb-8"
+            style="font-size:clamp(2.6rem,6vw,5.5rem)">
+          Contact<br/><span style="color:#F5850F">Alms Oil.</span>
+        </h1>
+        <p class="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-8 sm:mb-10 max-w-xl">
+          Speak with our commercial desk about petroleum supply, haulage, engineering, or infrastructure — we respond within two business hours.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3">
+          <a href="#contact-form"
+             class="group inline-flex items-center justify-center gap-3 bg-[#F5850F] hover:bg-[#e07708] text-white
+                    font-bold text-xs sm:text-sm uppercase tracking-wide
+                    pl-6 pr-5 py-4 rounded-full shadow-xl shadow-[#F5850F]/30
+                    hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200">
+            Send a Message
+            <span class="flex items-center justify-center w-7 h-7 rounded-full bg-white/20 group-hover:bg-white/30 transition-colors shrink-0">
+              <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+            </span>
+          </a>
+          <a href="tel:+2348002567645"
+             class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-white/25 text-white font-bold text-xs sm:text-sm uppercase tracking-wide hover:bg-white/10 transition-all duration-200">
+            Call the Desk
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="border-t border-white/8 py-5 flex flex-wrap items-center gap-x-8 gap-y-2">
+      @foreach(['Mon–Sat 7am–9pm','2-Hour Response','24/7 Emergency Dispatch','Lagos & Abuja Desks'] as $item)
+        <div class="flex items-center gap-2">
+          <div class="w-1 h-1 rounded-full bg-[#F5850F]"></div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">{{ $item }}</span>
+        </div>
+      @endforeach
+    </div>
   </div>
 </section>
 
 {{-- ── Content ── --}}
-<section class="bg-[#F0F0EF]/50 py-12 sm:py-16 lg:py-20">
+<section id="contact-form" class="bg-[#F0F0EF]/50 py-12 sm:py-16 lg:py-20 scroll-mt-24">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-start">
 

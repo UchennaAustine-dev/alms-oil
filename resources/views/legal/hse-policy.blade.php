@@ -4,31 +4,49 @@
 
 @section('content')
 
-<section class="bg-white border-b border-[#0B332B]/8 pt-10 sm:pt-14 pb-10 sm:pb-12">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-    <div class="flex items-center gap-2 text-[11px] text-[#2A2A2A]/40 font-medium mb-8 flex-wrap">
-      <a href="{{ route('home') }}" class="hover:text-[#F5850F] transition-colors">Home</a>
+{{-- ── Hero ── --}}
+<section class="relative overflow-hidden bg-[#0B332B]" style="min-height:72vh">
+  <div class="absolute inset-0 z-0">
+    <img src="https://images.pexels.com/photos/8487393/pexels-photo-8487393.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+         alt="Alms Oil HSE and safety operations"
+         class="w-full h-full object-cover object-center"
+         style="filter:saturate(0.65) brightness(0.38) contrast(1.1)" />
+    <div class="absolute inset-0"
+         style="background:linear-gradient(135deg,rgba(11,51,43,0.88) 0%,rgba(11,51,43,0.5) 55%,rgba(11,51,43,0.78) 100%)"></div>
+  </div>
+  <div class="absolute inset-0 z-[1] pointer-events-none opacity-[0.15]"
+       style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%224%22 stitchTiles=%22stitch%22/><feColorMatrix type=%22saturate%22 values=%220%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.04%22/></svg>');background-size:200px"></div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex flex-col justify-between" style="min-height:72vh">
+    <div class="pt-8 sm:pt-10 flex items-center gap-2 text-[11px] text-white/40 font-medium flex-wrap">
+      <a href="{{ route('home') }}" class="hover:text-white/70 transition-colors">Home</a>
       <span>/</span>
-      <span class="text-[#2A2A2A]/70">HSE Policy</span>
+      <span class="text-white/65">HSE Policy</span>
     </div>
-    <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 max-w-5xl">
-      <div>
-        <div class="flex items-center gap-2.5 mb-4">
-          <div class="w-4 h-px bg-[#F5850F]"></div>
+
+    <div class="py-12 sm:py-16 lg:py-20">
+      <div class="max-w-3xl">
+        <div class="flex items-center gap-2.5 mb-5 sm:mb-6">
+          <div class="w-5 h-px bg-[#F5850F]"></div>
           <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-[#F5850F]">Legal &amp; Compliance</span>
         </div>
-        <h1 class="font-display font-bold text-[#0B332B] leading-[0.9] tracking-tight"
-            style="font-size:clamp(1.75rem,4vw,3.75rem)">
-          Health, Safety &amp;<br/>Environment Policy
+        <h1 class="font-display font-bold text-white leading-[0.9] tracking-tight mb-6 sm:mb-8"
+            style="font-size:clamp(2.4rem,5.5vw,5rem)">
+          Health, Safety &amp;<br/><span style="color:#F5850F">Environment.</span>
         </h1>
+        <p class="text-white text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl">
+          Our commitment to HSE performance across depot loading, fleet haulage, and infrastructure development — zero tolerance for unsafe practices.
+        </p>
       </div>
-      <div class="flex flex-col gap-1.5 shrink-0">
-        <div class="flex items-center gap-2 text-[11px] text-[#2A2A2A]/45">
-          <svg class="w-3.5 h-3.5 text-[#0B332B]/30 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
-          <span>Reviewed: <strong class="text-[#2A2A2A]/70 font-semibold">January 2025</strong></span>
+    </div>
+
+    <div class="border-t border-white/8 py-5 flex flex-wrap items-center gap-x-8 gap-y-2">
+      @foreach(['Reviewed January 2025','NMDPRA & NOSDRA Aligned','Zero Tolerance Policy','Active Site Protocols'] as $item)
+        <div class="flex items-center gap-2">
+          <div class="w-1 h-1 rounded-full bg-[#F5850F]"></div>
+          <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">{{ $item }}</span>
         </div>
-        <p class="text-[11px] text-[#2A2A2A]/40 leading-relaxed max-w-xs">Our commitment to HSE performance across all operations.</p>
-      </div>
+      @endforeach
     </div>
   </div>
 </section>

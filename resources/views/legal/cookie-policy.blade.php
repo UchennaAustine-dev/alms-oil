@@ -40,7 +40,6 @@
           <p class="text-[10px] font-black uppercase tracking-[0.25em] text-[#0B332B]/35 mb-4">On This Page</p>
           <nav class="space-y-1">
             @foreach([
-              ['what-we-use','What Cookies We Use'],
               ['what-we-dont','What We Do Not Use'],
               ['managing','Managing Cookies'],
               ['contact','Contact'],
@@ -77,12 +76,6 @@
         <div class="bg-white rounded-2xl sm:rounded-3xl border border-[#0B332B]/8 p-6 sm:p-8 lg:p-10 legal-prose">
 
           <p class="lead">This website uses cookies to ensure basic functionality and improve your experience. We do not use cookies for advertising or third-party tracking purposes.</p>
-
-          <h2 id="what-we-use">What Cookies We Use</h2>
-          <ul>
-            <li><strong>Session cookies:</strong> Essential for secure form submissions and maintaining your session state. These expire automatically when you close your browser.</li>
-            <li><strong>CSRF token:</strong> A security token required for all form submissions to prevent cross-site request forgery attacks. It is set automatically and is essential to site security.</li>
-          </ul>
 
           <h2 id="what-we-dont">What We Do Not Use</h2>
           <ul>
