@@ -4,9 +4,9 @@
   <div class="absolute top-0 left-0 w-96 h-96 bg-[#F5850F]/8 rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
   <div class="absolute bottom-0 right-0 w-64 h-64 bg-white/3 rounded-full blur-2xl pointer-events-none"></div>
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 relative z-10">
-    <div class="text-center mb-10 sm:mb-14">
+    {{-- <div class="text-center mb-10 sm:mb-14">
       <span class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#F5850F]/80">Impact in Numbers</span>
-    </div>
+    </div> --}}
     @php
       $aboutStats = [
         ['850','M+','Litres Delivered','Total petroleum products supplied across Nigeria'],

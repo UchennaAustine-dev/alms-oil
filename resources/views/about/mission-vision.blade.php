@@ -1,10 +1,7 @@
 <section class="bg-[#F0F0EF] py-20 sm:py-28">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
     <div class="text-center mb-12 sm:mb-16">
-      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#0B332B]/10 mb-4">
-        <span class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>
-        <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-[#0B332B]/60">Purpose & Direction</span>
-      </div>
+      
       <h2 class="font-display font-black text-[#0B332B] leading-tight tracking-tight" style="font-size:clamp(1.9rem,4vw,3rem)">What drives us forward</h2>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 items-stretch">

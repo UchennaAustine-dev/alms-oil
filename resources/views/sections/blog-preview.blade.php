@@ -47,18 +47,12 @@
         {{-- SECTION HEADER --}}
         <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-10 sm:mb-14">
             <div class="space-y-3 max-w-2xl">
-                <div
-                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B332B]/5 border border-[#0B332B]/10">
-                    <span class="w-2 h-2 rounded-full bg-[#F5850F]"></span>
-                    <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#0B332B]">
-                        INDUSTRY INSIGHTS
-                    </span>
-                </div>
+                
                 <h2
                     class="font-display font-black text-[#0B332B] text-2xl sm:text-4xl lg:text-5xl tracking-tight leading-tight">
                     Petroleum Market Intelligence
                 </h2>
-                <p class="text-[#2A2A2A]/70 text-xs sm:text-base leading-relaxed">
+                <p class="text-[#2A2A2A]/70 text-base leading-relaxed">
                     Expert analysis on downstream oil &amp; gas trends, PIA regulations, fleet logistics, and fuel
                     pricing across Nigeria.
                 </p>

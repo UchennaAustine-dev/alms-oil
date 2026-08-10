@@ -9,18 +9,12 @@
         {{-- SECTION HEADER --}}
         <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 sm:mb-14 lg:mb-16 gap-6">
             <div class="space-y-3 max-w-2xl">
-                <div
-                    class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B332B]/5 border border-[#0B332B]/10">
-                    <span class="w-2 h-2 rounded-full bg-[#F5850F]"></span>
-                    <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#0B332B]">
-                        OUR CORE CAPABILITIES
-                    </span>
-                </div>
+
                 <h2
                     class="font-display font-black text-[#0B332B] text-2xl sm:text-4xl lg:text-5xl tracking-tight leading-tight">
                     Integrated Energy &amp; Infrastructure Services
                 </h2>
-                <p class="text-[#2A2A2A]/70 text-sm sm:text-base leading-relaxed">
+                <p class="text-[#2A2A2A]/70 text-[16px] leading-relaxed">
                     From bulk fuel trading and nationwide fleet haulage to facility maintenance and tank farm
                     engineering.
                 </p>
@@ -58,11 +52,11 @@
                         Petroleum Supply &amp; Trading
                     </h3>
 
-                    <p class="text-xs text-[#2A2A2A]/70 leading-relaxed">
+                    <p class="text-[16px] text-[#2A2A2A]/70 leading-relaxed">
                         Bulk sourcing and nationwide supply of certified AGO, PMS, DPK, ATK, and Heavy Fuel Oils.
                     </p>
 
-                    <ul class="space-y-1.5 pt-2 text-[11px] font-semibold text-[#0B332B]/80">
+                    <ul class="space-y-1.5 pt-2 text-[13px] font-semibold text-[#0B332B]/80">
                         <li class="flex items-center gap-2"><span
                                 class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>AGO (Diesel) &amp; PMS (Petrol)
                         </li>
@@ -105,11 +99,11 @@
                         Logistics &amp; Fleet Haulage
                     </h3>
 
-                    <p class="text-xs text-[#2A2A2A]/70 leading-relaxed">
+                    <p class="text-[16px] text-[#2A2A2A]/70 leading-relaxed">
                         36-state haulage distribution network backed by GPS-tracked 33,000L - 60,000L petroleum tankers.
                     </p>
 
-                    <ul class="space-y-1.5 pt-2 text-[11px] font-semibold text-[#0B332B]/80">
+                    <ul class="space-y-1.5 pt-2 text-[13px] font-semibold text-[#0B332B]/80">
                         <li class="flex items-center gap-2"><span
                                 class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>Real-time Telemetry Tracking</li>
                         <li class="flex items-center gap-2"><span
@@ -151,12 +145,12 @@
                         Engineering &amp; Industrial
                     </h3>
 
-                    <p class="text-xs text-[#2A2A2A]/70 leading-relaxed">
+                    <p class="text-[16px] text-[#2A2A2A]/70 leading-relaxed">
                         Depot maintenance, dispensing equipment calibration, pipeline integrity, and engineering
                         procurement.
                     </p>
 
-                    <ul class="space-y-1.5 pt-2 text-[11px] font-semibold text-[#0B332B]/80">
+                    <ul class="space-y-1.5 pt-2 text-[13px] font-semibold text-[#0B332B]/80">
                         <li class="flex items-center gap-2"><span
                                 class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>Depot &amp; Pump Calibration</li>
                         <li class="flex items-center gap-2"><span
@@ -198,12 +192,12 @@
                         Energy Infrastructure
                     </h3>
 
-                    <p class="text-xs text-[#2A2A2A]/70 leading-relaxed">
+                    <p class="text-[16px] text-[#2A2A2A]/70 leading-relaxed">
                         Tank farms, filling stations, and LPG skid plant development — from initial design to
                         commissioning.
                     </p>
 
-                    <ul class="space-y-1.5 pt-2 text-[11px] font-semibold text-[#0B332B]/80">
+                    <ul class="space-y-1.5 pt-2 text-[13px] font-semibold text-[#0B332B]/80">
                         <li class="flex items-center gap-2"><span
                                 class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>Tank Farm Development</li>
                         <li class="flex items-center gap-2"><span

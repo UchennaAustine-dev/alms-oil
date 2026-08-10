@@ -1,14 +1,10 @@
 <section class="bg-[#F0F0EF] py-20 sm:py-28">
     <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div class="text-center max-w-2xl mx-auto mb-14">
-            <div
-                class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white border border-[#0B332B]/10 mb-4">
-                <span class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>
-                <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-[#0B332B]/60">Why Alms Oil</span>
-            </div>
+            
             <h2 class="font-display font-black text-[#0B332B] leading-tight tracking-tight mb-3"
                 style="font-size:clamp(1.9rem,4vw,3rem)">The standard every delivery is measured against</h2>
-            <p class="text-[#2A2A2A]/55 text-sm sm:text-base leading-relaxed">Industrial clients choose us when
+            <p class="text-[#2A2A2A]/55 text-base">Industrial clients choose us when
                 operational continuity is non-negotiable. Here's what sets our service apart.</p>
         </div>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
@@ -29,7 +25,7 @@
                     </div>
                     <h3 class="font-display font-bold text-white text-lg leading-snug">GPS Telemetry on Every Tanker
                     </h3>
-                    <p class="text-white/65 text-[12px] mt-1 leading-relaxed">Real-time location, temperature, and
+                    <p class="text-white/65 text-[14px] ">Real-time location, temperature, and
                         volume telemetry across our entire delivery fleet.</p>
                 </div>
             </div>
@@ -50,7 +46,7 @@
                     <p class="font-display font-black text-white leading-none mb-2"
                         style="font-size:clamp(2.5rem,4vw,3.5rem)">99.8%</p>
                     <p class="text-[#F5850F] font-bold text-sm mb-3">Product Specification Accuracy</p>
-                    <p class="text-white/55 text-[12px] leading-relaxed">Every batch independently tested against
+                    <p class="text-white/55 text-[15px] ">Every batch independently tested against
                         DPR/NMDPRA product specifications before dispatch from our depot.</p>
                 </div>
                 <div class="relative z-10 mt-6 pt-5 border-t border-white/10 flex items-center gap-2">
@@ -75,7 +71,7 @@
                     </div>
                     <h3 class="font-display font-bold text-[#0B332B] text-lg leading-snug mb-1">Full Compliance, Zero
                         Shortcuts</h3>
-                    <p class="text-[#2A2A2A]/55 text-[12px] leading-relaxed">Every delivery backed by PIA-compliant
+                    <p class="text-[#2A2A2A]/55 text-[15px] ">Every delivery backed by PIA-compliant
                         documentation, NMDPRA reporting, and full waybill trail.</p>
                 </div>
                 <div class="space-y-2.5">
@@ -114,7 +110,7 @@
                 <div class="relative z-10">
                     <h3 class="font-display font-black text-white leading-tight mb-3"
                         style="font-size:clamp(1.4rem,2.5vw,1.9rem)">24/7 Emergency Dispatch</h3>
-                    <p class="text-white/80 text-sm leading-relaxed">Generator failures don't wait for business hours.
+                    <p class="text-white/80 text-base">Generator failures don't wait for business hours.
                         Our emergency fuel dispatch team operates round-the-clock with guaranteed 4-hour response for
                         critical industrial accounts.</p>
                 </div>

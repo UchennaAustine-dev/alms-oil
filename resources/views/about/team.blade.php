@@ -10,13 +10,10 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
       <div>
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B332B]/5 border border-[#0B332B]/10 mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>
-          <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-[#0B332B]/60">The Team</span>
-        </div>
+        
         <h2 class="font-display font-black text-[#0B332B] leading-tight tracking-tight" style="font-size:clamp(1.9rem,4vw,3rem)">Industry experts behind<br/>every delivery</h2>
       </div>
-      <p class="text-[#2A2A2A]/55 text-sm sm:text-base max-w-xs leading-relaxed">Our leadership team brings combined decades of Nigerian downstream energy operations experience.</p>
+      <p class="text-[#2A2A2A]/55 text-base max-w-xs ">Our leadership team brings combined decades of Nigerian downstream energy operations experience.</p>
     </div>
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
       @foreach($aboutTeam as $i => [$role,$dept,$bio,$img,$initials])
@@ -25,7 +22,7 @@
             <img src="{{ $img }}" alt="{{ $role }}" class="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500" style="filter:saturate(0.8)" />
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" style="background:linear-gradient(to top,rgba(11,51,43,0.92) 0%,rgba(11,51,43,0.5) 55%,transparent 100%)"></div>
             <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 transition-all duration-300 translate-y-2 group-hover:translate-y-0">
-              <p class="text-white/85 text-[11px] leading-relaxed">{{ $bio }}</p>
+              <p class="text-white/85 text-[14px]">{{ $bio }}</p>
             </div>
           </div>
           <div class="p-5">
@@ -50,7 +47,7 @@
       </div>
       <div>
         <p class="text-[#0B332B] font-bold text-sm">Join a team that powers Nigeria's industry</p>
-        <p class="text-[#2A2A2A]/55 text-[12px] mt-0.5">We're growing. If you're passionate about energy operations, logistics, or engineering, <a href="{{ route('contact') }}" class="text-[#F5850F] hover:underline font-semibold">get in touch</a>.</p>
+        <p class="text-[#2A2A2A]/55 text-[13px] mt-0.5">We're growing. If you're passionate about energy operations, logistics, or engineering, <a href="{{ route('contact') }}" class="text-[#F5850F] hover:underline font-semibold">get in touch</a>.</p>
       </div>
     </div>
   </div>

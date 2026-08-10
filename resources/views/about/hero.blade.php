@@ -19,11 +19,7 @@
         </div>
         <div class="py-12 sm:py-16 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-end">
             <div>
-                <div class="flex items-center gap-2.5 mb-6">
-                    <div class="w-5 h-px bg-[#F5850F]"></div>
-                    <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-[#F5850F]">About Alms Oil
-                        Nigeria</span>
-                </div>
+               
                 <h1 class="font-display font-bold text-white leading-[0.88] tracking-tight mb-8"
                     style="font-size:clamp(3rem,6.5vw,6rem)">
                     Nigeria's<br />trusted<br />

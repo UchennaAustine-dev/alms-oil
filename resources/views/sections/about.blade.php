@@ -10,25 +10,18 @@
         {{-- SECTION HEADER --}}
         <div class="text-center max-w-3xl mx-auto mb-10 sm:mb-14 lg:mb-20 space-y-3 sm:space-y-4">
 
-            <div
-                class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#0B332B]/5 border border-[#0B332B]/10">
-                <span class="w-2 h-2 rounded-full bg-[#F5850F]"></span>
-                <span class="text-[10px] sm:text-[11px] font-bold tracking-[0.22em] uppercase text-[#0B332B]">
-                    THE DIFFERENCE WE MAKE
-                </span>
-            </div>
-
+        
             <h2
                 class="font-display font-black text-[#0B332B] text-2xl sm:text-4xl lg:text-5xl tracking-tight leading-tight">
                 Leading the Way in Petroleum &amp; Energy Supply
             </h2>
 
-            <p class="text-[#2A2A2A]/70 text-sm sm:text-base lg:text-lg leading-relaxed max-w-2xl mx-auto">
+            <p class="text-[#2A2A2A]/70 text-[16px] leading-relaxed max-w-2xl mx-auto">
                 Explore the key reasons industrial clients and filling stations choose Alms Oil as their trusted energy
                 supply partner.
             </p>
 
-            <div class="w-20 sm:w-24 h-0.5 bg-[#0B332B]/15 mx-auto pt-2"></div>
+           
 
         </div>
 
@@ -41,14 +34,14 @@
                 {{-- Top-Left Card --}}
                 <div
                     class="bg-[#F2ECE4] p-6 sm:p-8 rounded-3xl border border-[#0B332B]/10 shadow-sm flex flex-col justify-between space-y-6">
-                    <p class="text-[#2A2A2A]/75 text-xs sm:text-sm lg:text-base leading-relaxed">
+                    <p class="text-[#2A2A2A]/75 text-[16px] leading-relaxed">
                         Our unwavering quality assurance ensures you receive top-purity petroleum products, always
                         meeting your exact industrial standards.
                     </p>
                     <div>
                         <p class="font-display text-3xl sm:text-4xl font-extrabold text-[#0B332B] leading-none">99.8%
                         </p>
-                        <p class="text-xs sm:text-sm font-bold text-[#0B332B] mt-1">Product Purity &amp; Spec Guarantee
+                        <p class="text-[16px] font-bold text-[#0B332B] mt-1">Product Purity &amp; Spec Guarantee
                         </p>
                     </div>
                 </div>
@@ -65,9 +58,9 @@
                     </div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
                         <span
-                            class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-alms-orange">Quality
+                            class="text-[13px] font-bold uppercase tracking-widest text-alms-orange">Quality
                             Assurance</span>
-                        <p class="text-xs font-bold mt-0.5">Laboratory Certified Fuel Analysis</p>
+                        <p class="text-[16px] font-bold mt-0.5">Laboratory Certified Fuel Analysis</p>
                     </div>
                 </div>
 
@@ -103,7 +96,7 @@
 
                 {{-- Bottom Message --}}
                 <div class="relative z-10">
-                    <p class="text-xs sm:text-sm text-white/80 leading-relaxed">
+                    <p class="text-[16px] text-white/80 leading-relaxed">
                         You can rely on us to keep your manufacturing plant, generators, and fleet running smoothly
                         without costly delays.
                     </p>
@@ -123,9 +116,9 @@
                     <div class="absolute inset-0 bg-linear-to-t from-[#0B332B]/85 via-transparent to-transparent">
                     </div>
                     <div class="absolute bottom-4 left-4 right-4 text-white">
-                        <span class="text-[9px] sm:text-[10px] font-bold uppercase tracking-widest text-[#F5850F]">Bulk
+                        <span class="text-[13px] font-bold uppercase tracking-widest text-[#F5850F]">Bulk
                             Storage Infrastructure</span>
-                        <p class="text-xs font-bold mt-0.5">Strategic Tank Farm Terminals</p>
+                        <p class="text-[16px] font-bold mt-0.5">Strategic Tank Farm Terminals</p>
                     </div>
                 </div>
 
@@ -137,7 +130,7 @@
                         </p>
                         <p class="text-xs sm:text-sm font-bold text-[#0B332B] mt-1">Litres Delivered</p>
                     </div>
-                    <p class="text-[#2A2A2A]/75 text-xs sm:text-sm leading-relaxed">
+                    <p class="text-[#2A2A2A]/75 text-[16px] leading-relaxed">
                         Join countless satisfied corporate and industrial customers who have relied on our consistent,
                         expert energy supply nationwide.
                     </p>

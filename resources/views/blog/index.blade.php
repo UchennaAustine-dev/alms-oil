@@ -28,10 +28,7 @@
 
     <div class="py-12 sm:py-16 lg:py-20">
       <div class="max-w-3xl">
-        <div class="flex items-center gap-2.5 mb-5 sm:mb-6">
-          <div class="w-5 h-px bg-[#F5850F]"></div>
-          <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-[#F5850F]">Alms Oil Editorial</span>
-        </div>
+       
         <h1 class="font-display font-bold text-white leading-[0.9] tracking-tight mb-6 sm:mb-8"
             style="font-size:clamp(2.6rem,6vw,5.5rem)">
           Industry<br/><span style="color:#F5850F">Insights.</span>
@@ -210,7 +207,7 @@
           </svg>
         </div>
         <h3 class="font-display font-bold text-[#0B332B] text-lg mb-2">No articles yet</h3>
-        <p class="text-sm text-[#2A2A2A]/45">Check back soon for industry insights and updates.</p>
+        <p class="text-base text-[#2A2A2A]/45">Check back soon for industry insights and updates.</p>
       </div>
     @endif
 
@@ -225,14 +222,11 @@
     <div class="flex flex-col lg:flex-row lg:items-center gap-8 lg:gap-20">
 
       <div class="lg:flex-1">
-        <div class="flex items-center gap-2.5 mb-3">
-          <div class="w-4 h-px bg-[#F5850F]"></div>
-          <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-[#F5850F]">Work With Us</span>
-        </div>
+        
         <h2 class="font-display font-bold text-[#0B332B] leading-tight mb-2" style="font-size:clamp(1.4rem,2.5vw,2rem)">
           Need petroleum supply, logistics,<br class="hidden sm:block"/>or infrastructure support?
         </h2>
-        <p class="text-sm text-[#2A2A2A]/55 leading-relaxed">Our commercial team is available Monday to Saturday, 7am–9pm.</p>
+        <p class="text-base text-[#2A2A2A]/55 ">Our commercial team is available Monday to Saturday, 7am–9pm.</p>
       </div>
 
       <div class="flex flex-col sm:flex-row gap-3 shrink-0">

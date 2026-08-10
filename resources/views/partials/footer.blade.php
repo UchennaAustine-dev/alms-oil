@@ -23,16 +23,11 @@
 
         {{-- Text --}}
         <div class="space-y-1.5">
-          <div class="flex items-center gap-2 mb-2">
-            <div class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></div>
-            <span class="text-[10px] font-bold tracking-[0.25em] uppercase text-[#F5850F]">
-              Nationwide Petroleum Distribution
-            </span>
-          </div>
+          
           <h3 class="text-lg sm:text-xl lg:text-2xl font-display font-bold text-white leading-snug">
             Need Uninterrupted Commercial<br class="hidden sm:block"/> Fuel Supply?
           </h3>
-          <p class="text-white/45 text-[13px] sm:text-sm leading-relaxed max-w-md">
+          <p class="text-white/45 text-base leading-relaxed max-w-md">
             Our commercial desk responds within 2 hours.
           </p>
         </div>
@@ -82,13 +77,13 @@
                       hover:opacity-100 transition-opacity" />
         </a>
 
-        <p class="text-[13px] leading-relaxed text-white/40 max-w-xs">
+        <p class="text-[15px] leading-relaxed text-white/40 max-w-xs">
           Integrated petroleum supply, logistics, engineering, and energy infrastructure
           across Nigeria and West Africa.
         </p>
 
         {{-- Contact items --}}
-        <div class="space-y-2.5 text-[13px]">
+        <div class="space-y-2.5 text-[15px]">
 
           <a href="mailto:info@almsoil.com"
              class="flex items-center gap-3 text-white/55 hover:text-[#F5850F] transition-colors group">
@@ -133,11 +128,11 @@
 
       {{-- ── Services ── --}}
       <div class="lg:col-span-3 space-y-4">
-        <h4 class="text-[10px] font-black uppercase tracking-[0.22em] text-[#F5850F]
+        <h4 class="text-[12px] font-black uppercase tracking-[0.22em] text-[#F5850F]
                    pb-2.5 border-b border-white/8">
           Services
         </h4>
-        <ul class="space-y-2.5 text-[13px]">
+        <ul class="space-y-2.5 text-[15px]">
           @foreach([
             ['Petroleum Supply & Trading',   route('services.petroleum')],
             ['Logistics & Distribution',     route('services.logistics')],
@@ -162,11 +157,11 @@
 
       {{-- ── Products ── --}}
       <div class="lg:col-span-2 space-y-4">
-        <h4 class="text-[10px] font-black uppercase tracking-[0.22em] text-[#F5850F]
+        <h4 class="text-[12px] font-black uppercase tracking-[0.22em] text-[#F5850F]
                    pb-2.5 border-b border-white/8">
           Products
         </h4>
-        <ul class="space-y-2 text-[13px] text-white/40">
+        <ul class="space-y-2 text-[15px] text-white/40">
           @foreach(['AGO (Diesel)','PMS (Petrol)','DPK (Kerosene)','Jet A-1','LPFO','LPG','Base Oils','Bitumen'] as $p)
             <li class="flex items-center gap-2.5 py-0.5">
               <span class="w-1.5 h-1.5 rounded-full bg-[#F5850F]/35 shrink-0"></span>
@@ -178,11 +173,11 @@
 
       {{-- ── Legal + Compliance ── --}}
       <div class="lg:col-span-3 space-y-4">
-        <h4 class="text-[10px] font-black uppercase tracking-[0.22em] text-[#F5850F]
+        <h4 class="text-[12px] font-black uppercase tracking-[0.22em] text-[#F5850F]
                    pb-2.5 border-b border-white/8">
           Legal
         </h4>
-        <ul class="space-y-2.5 text-[13px]">
+        <ul class="space-y-2.5 text-[15px]">
           @foreach([
             ['Privacy Policy',  route('privacy')],
             ['Terms of Supply', route('terms')],
@@ -241,7 +236,7 @@
       <div class="flex items-center gap-3 justify-center">
         <span>almsoil.com</span>
         <span class="w-1 h-1 rounded-full bg-white/15"></span>
-        <span>Powered by Excellence</span>
+        <a href="https://dev.lemonwares.com" target="_blank">Powered by LemonWares Technology</a>
       </div>
     </div>
   </div>

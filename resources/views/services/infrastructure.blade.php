@@ -32,16 +32,12 @@
 
             <div class="py-10 sm:py-14 lg:py-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-end">
                 <div>
-                    <div class="flex items-center gap-2.5 mb-5 sm:mb-6">
-                        <div class="w-5 h-px bg-alms-orange"></div>
-                        <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-alms-orange">04 — Our
-                            Services</span>
-                    </div>
+
                     <h1 class="font-display font-bold text-white leading-[0.9] tracking-tight mb-6 sm:mb-8"
                         style="font-size:clamp(2.6rem,6vw,5.5rem)">
                         Energy<br />Infrastructure<br /><span style="color:#F5850F">Solutions.</span>
                     </h1>
-                    <p class="text-white text-sm sm:text-base lg:text-lg leading-relaxed mb-7 sm:mb-8 max-w-lg">
+                    <p class="text-white text-base mb-7 sm:mb-8 max-w-lg">
                         Turnkey design, construction, and management of petroleum storage and distribution infrastructure —
                         from tank farms to modular filling stations across Nigeria.
                     </p>
@@ -65,7 +61,7 @@
                 </div>
                 <div class="space-y-3">
                     <div class="backdrop-blur-md bg-white/8 border border-white/15 rounded-3xl p-5 sm:p-6">
-                        <p class="text-white text-sm sm:text-base leading-relaxed">
+                        <p class="text-white text-base">
                             We deliver complete infrastructure solutions for petroleum businesses — whether you're building
                             a new depot, expanding a tank farm, or setting up a retail fuel station from the ground up.
                         </p>
@@ -102,15 +98,11 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
             <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-10 sm:mb-14">
                 <div>
-                    <div class="flex items-center gap-2.5 mb-3">
-                        <div class="w-4 h-px bg-alms-orange"></div>
-                        <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-alms-orange">What We
-                            Build</span>
-                    </div>
+
                     <h2 class="font-display font-bold text-alms-green leading-tight tracking-tight"
                         style="font-size:clamp(1.8rem,3.5vw,3rem)">Infrastructure We Deliver</h2>
                 </div>
-                <p class="text-sm text-alms-charcoal/55 max-w-xs sm:text-right leading-relaxed">Engineered to last, built to
+                <p class="text-base text-alms-charcoal/55 max-w-xs sm:text-right ">Engineered to last, built to
                     the highest Nigerian and international standards.</p>
             </div>
 
@@ -166,7 +158,7 @@
                             <h3 class="text-sm sm:text-base font-bold text-alms-green leading-snug self-center">
                                 {{ $title }}</h3>
                         </div>
-                        <p class="text-[13px] text-alms-charcoal/60 leading-relaxed">{{ $desc }}</p>
+                        <p class="text-base text-alms-charcoal/60 ">{{ $desc }}</p>
                     </div>
                 @endforeach
             </div>
@@ -177,12 +169,7 @@
     <section class="bg-white py-14 sm:py-20 lg:py-24 border-t border-alms-green/8">
         <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
             <div class="text-center mb-10 sm:mb-14">
-                <div class="flex items-center justify-center gap-2.5 mb-3">
-                    <div class="w-4 h-px bg-alms-orange"></div>
-                    <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-alms-orange">Project
-                        Lifecycle</span>
-                    <div class="w-4 h-px bg-alms-orange"></div>
-                </div>
+
                 <h2 class="font-display font-bold text-alms-green tracking-tight"
                     style="font-size:clamp(1.7rem,3vw,2.6rem)">From Concept to Commissioning</h2>
             </div>
@@ -197,7 +184,7 @@
                             <span class="text-xl font-black leading-none">{{ $num }}</span>
                         </div>
                         <h3 class="text-sm sm:text-base font-bold text-alms-green mb-2">{{ $title }}</h3>
-                        <p class="text-[13px] text-alms-charcoal/55 leading-relaxed">{{ $desc }}</p>
+                        <p class="text-base text-alms-charcoal/55 ">{{ $desc }}</p>
                     </div>
                 @endforeach
             </div>
@@ -220,8 +207,8 @@
                     <div
                         class="absolute -bottom-4 -right-2 sm:-right-6 z-10 flex items-center gap-3 bg-white px-4 py-3 rounded-2xl shadow-xl border border-alms-green/10">
                         <div class="flex items-center justify-center w-9 h-9 rounded-xl bg-alms-orange/10">
-                            <svg class="w-4 h-4 text-alms-orange" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor" stroke-width="2">
+                            <svg class="w-4 h-4 text-alms-orange" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round"
                                     d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
                             </svg>
@@ -235,11 +222,7 @@
                 </div>
 
                 <div class="srv-reveal">
-                    <div class="flex items-center gap-2.5 mb-4">
-                        <div class="w-4 h-px bg-alms-orange"></div>
-                        <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-alms-orange">Why Choose
-                            Us</span>
-                    </div>
+
                     <h2 class="font-display font-bold text-alms-green leading-tight tracking-tight mb-8"
                         style="font-size:clamp(1.7rem,3vw,2.6rem)">
                         Built right the first time,<br />every time.
@@ -248,10 +231,10 @@
                         @foreach ([['DPR-Licensed Construction', 'All infrastructure projects are designed and executed by DPR-certified contractors under Alms Oil project management.'], ['Regulatory Navigation', 'We manage the entire permits and approvals chain — NMDPRA, DPR, state environmental agencies, and local government.'], ['QHSE Integration', 'Quality, health, safety, and environment standards are embedded at every project phase — not added as an afterthought.'], ['On-Time Delivery', 'Our project management framework tracks milestones in real time. We are transparent about timelines and accountable for delivery.']] as [$title, $desc])
                             <div
                                 class="flex gap-4 p-4 sm:p-5 rounded-2xl bg-white border border-alms-green/8 hover:border-alms-orange/30 hover:bg-alms-orange/2 transition-all duration-200">
-                                <div class="w-1.5 bg-alms-orange rounded-full shrink-0 self-stretch min-h-10"></div>
+                                {{-- <div class="w-1.5 bg-alms-orange rounded-full shrink-0 self-stretch min-h-10"></div> --}}
                                 <div>
                                     <h3 class="text-sm font-bold text-alms-green mb-1">{{ $title }}</h3>
-                                    <p class="text-[13px] text-alms-charcoal/60 leading-relaxed">{{ $desc }}</p>
+                                    <p class="text-base text-alms-charcoal/60 ">{{ $desc }}</p>
                                 </div>
                             </div>
                         @endforeach

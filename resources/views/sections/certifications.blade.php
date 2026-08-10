@@ -3,10 +3,10 @@
 ══════════════════════════════════════════════════════════════════════════ --}}
 <section class="bg-[#F0F0EF]/80 border-b border-[#0B332B]/8 py-6 overflow-hidden">
   <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 mb-4 flex items-center justify-between">
-    <p class="text-[10px] font-extrabold tracking-[0.25em] uppercase text-[#0B332B]">
+    <p class="text-[16px] font-extrabold uppercase text-[#0B332B]">
       REGULATORY COMPLIANCE &amp; ACCREDITATIONS
     </p>
-    <span class="text-[10px] font-semibold text-[#F5850F]">Full PIA Standard</span>
+    
   </div>
 
   <div class="relative">
