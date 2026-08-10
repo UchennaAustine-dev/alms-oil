@@ -9,7 +9,7 @@
 <section class="bg-[#F0F0EF] py-14 sm:py-20 border-y border-[#0B332B]/8">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
     <div class="text-center mb-10">
-      <span class="text-[10px] font-bold tracking-[0.3em] uppercase text-[#0B332B]/40">Accreditations & Compliance</span>
+      <span class="text-[14px] font-bold tracking-[0.3em] uppercase text-[#0B332B]/40">Accreditations & Compliance</span>
     </div>
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-5">
       @foreach($aboutCerts as [$badge,$title,$desc,$color,$path])
@@ -20,8 +20,8 @@
             </svg>
           </div>
           <span class="font-display font-black text-[#0B332B] text-lg leading-none block mb-1">{{ $badge }}</span>
-          <p class="text-[11px] font-bold text-[#0B332B]/60 mb-2">{{ $title }}</p>
-          <p class="text-[11px] text-[#2A2A2A]/50 leading-relaxed hidden sm:block">{{ $desc }}</p>
+          <p class="text-[13px] font-bold text-[#0B332B]/60 mb-2">{{ $title }}</p>
+          <p class="text-base text-[#2A2A2A]/50 hidden sm:block">{{ $desc }}</p>
         </div>
       @endforeach
     </div>

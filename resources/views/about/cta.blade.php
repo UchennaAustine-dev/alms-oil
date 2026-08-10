@@ -5,11 +5,7 @@
     <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
         <div class="grid grid-cols-1 lg:grid-cols-2 items-stretch min-h-[440px] sm:min-h-[520px]">
             <div class="py-16 sm:py-20 lg:py-24 flex flex-col justify-center gap-6 lg:pr-12">
-                <div class="flex items-center gap-2.5">
-                    <div class="w-5 h-px bg-[#F5850F]"></div>
-                    <span class="text-[10px] font-bold tracking-[0.32em] uppercase text-[#F5850F]">Let's Work
-                        Together</span>
-                </div>
+                
                 <h2 class="font-display font-black text-white leading-[0.9] tracking-tight"
                     style="font-size:clamp(2.2rem,5vw,4.2rem)">
                     Ready to secure<br />your energy<br /><span style="color:#F5850F">supply?</span>
@@ -43,7 +39,7 @@
                                     d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                             </svg>
                         </div>
-                        <span class="text-white/55 text-[12px]">24/7 Operations Line</span>
+                        <span class="text-white/55 text-[14px]">24/7 Operations Line</span>
                     </div>
                     <div class="flex items-center gap-2">
                         <div class="w-7 h-7 rounded-full bg-white/8 flex items-center justify-center">
@@ -55,7 +51,7 @@
                                     d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                             </svg>
                         </div>
-                        <span class="text-white/55 text-[12px]">Lagos & Nationwide</span>
+                        <span class="text-white/55 text-[14px]">Lagos & Nationwide</span>
                     </div>
                 </div>
             </div>

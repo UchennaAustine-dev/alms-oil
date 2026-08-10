@@ -45,7 +45,7 @@
               Looking Ahead · 2025 &amp; Beyond
             </span>
           </div>
-          <p class="text-white/65 text-sm sm:text-base lg:text-lg leading-relaxed max-w-md">
+          <p class="text-white/65 base leading-relaxed max-w-md">
             Nigeria is entering a new era of industrial growth. Alms Oil is committed to being at the forefront — through disciplined operations, long-term partnerships, and uncompromised delivery.
           </p>
         </div>
@@ -57,21 +57,21 @@
                       rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white min-w-[100px]">
             <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">Volume</p>
             <p class="font-display font-black text-xl sm:text-3xl leading-none">850M+</p>
-            <p class="text-[10px] text-white/45 mt-0.5">Litres delivered</p>
+            <p class="text-[13px] text-white/45 mt-0.5">Litres delivered</p>
           </div>
 
           <div class="backdrop-blur-md bg-white/10 border border-white/20
                       rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white min-w-[90px]">
             <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">Coverage</p>
             <p class="font-display font-black text-xl sm:text-3xl leading-none text-[#F5850F]">36</p>
-            <p class="text-[10px] text-white/45 mt-0.5">States</p>
+            <p class="text-[13px] text-white/45 mt-0.5">States</p>
           </div>
 
           <div class="backdrop-blur-md bg-[#F5850F]/20 border border-[#F5850F]/30
                       rounded-2xl px-4 sm:px-5 py-3 sm:py-4 text-white min-w-[100px]">
             <p class="text-[9px] font-bold uppercase tracking-[0.22em] text-[#F5850F]/80 mb-1">On-Time</p>
             <p class="font-display font-black text-xl sm:text-3xl leading-none">98.5%</p>
-            <p class="text-[10px] text-white/45 mt-0.5">Delivery rate</p>
+            <p class="text-[13px] text-white/45 mt-0.5">Delivery rate</p>
           </div>
 
         </div>
@@ -141,7 +141,7 @@
             Ready to build Africa's<br class="hidden sm:block"/>
             energy future with us?
           </h2>
-          <p class="text-white/45 text-sm">
+          <p class="text-white/45 text-base ">
             Our commercial desk responds within 2 hours.
           </p>
         </div>

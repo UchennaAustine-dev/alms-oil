@@ -12,13 +12,10 @@
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
     <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-14">
       <div>
-        <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#F5850F]/8 border border-[#F5850F]/15 mb-4">
-          <span class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></span>
-          <span class="text-[10px] font-bold tracking-[0.28em] uppercase text-[#F5850F]">Our Journey</span>
-        </div>
+       
         <h2 class="font-display font-black text-[#0B332B] leading-tight tracking-tight" style="font-size:clamp(1.9rem,4vw,3rem)">From founding to<br/>nationwide operations</h2>
       </div>
-      <p class="text-[#2A2A2A]/55 text-sm sm:text-base max-w-xs leading-relaxed">Key milestones that shaped who we are today and where we're heading next.</p>
+      <p class="text-[#2A2A2A]/55 text-base max-w-xs">Key milestones that shaped who we are today and where we're heading next.</p>
     </div>
     {{-- Mobile --}}
     <div class="lg:hidden relative pl-6">
@@ -35,7 +32,7 @@
             <div class="p-4">
               <p class="text-[9px] font-bold uppercase tracking-wider mb-1" style="color:{{ $color }}">{{ $sub }}</p>
               <h3 class="font-display font-bold text-[#0B332B] text-base mb-2">{{ $title }}</h3>
-              <p class="text-[#2A2A2A]/60 text-[12px] leading-relaxed">{{ $desc }}</p>
+              <p class="text-[#2A2A2A]/60 text-[14px]">{{ $desc }}</p>
             </div>
           </div>
         </div>
@@ -58,7 +55,7 @@
                   <div class="p-3.5">
                     <p class="text-[9px] font-bold uppercase tracking-wider mb-1" style="color:{{ $color }}">{{ $sub }}</p>
                     <h3 class="font-display font-bold text-[#0B332B] text-sm leading-snug mb-1.5">{{ $title }}</h3>
-                    <p class="text-[#2A2A2A]/55 text-[11px] leading-relaxed">{{ $desc }}</p>
+                    <p class="text-[#2A2A2A]/55 text-[13px]">{{ $desc }}</p>
                   </div>
                 </div>
               </div>

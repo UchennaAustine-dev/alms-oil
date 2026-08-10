@@ -1,21 +1,40 @@
 {{-- ══════════════════════════════════════════════════════════════════════════
      HERO SECTION — Alms Oil Nigeria Limited
      · Tightly Mobile Responsive
-     · High-quality Unsplash stock images (oil/fuel/industrial — contextually relevant)
+     · Full-bleed atmospheric background (aligned with other page heroes)
      · Interactive tabbed photo preview & floating glassmorphism badges
 ══════════════════════════════════════════════════════════════════════════ --}}
-<section class="relative bg-[#FDFDFC] overflow-hidden pt-4 sm:pt-6 pb-10 sm:pb-12 lg:pb-16 border-b border-[#0B332B]/8">
+<section class="relative overflow-hidden pt-4 sm:pt-6 pb-10 sm:pb-12 lg:pb-16 border-b border-[#0B332B]/10">
 
-    {{-- Ambient Glows --}}
-    <div
-        class="absolute top-0 right-1/4 w-72 sm:w-96 h-72 sm:h-96 bg-[#F5850F]/8 rounded-full blur-3xl pointer-events-none -z-10 select-none">
+    {{-- Full-bleed atmospheric background --}}
+    <div class="absolute inset-0 z-0">
+        <img src="https://images.pexels.com/photos/38214019/pexels-photo-38214019.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
+            alt="" aria-hidden="true" class="w-full h-full object-cover object-center"
+            style="filter:saturate(0.55) brightness(0.72) contrast(1.05)" />
+        {{-- Overall green atmosphere --}}
+        <div class="absolute inset-0"
+            style="background:linear-gradient(135deg,rgba(11,51,43,0.55) 0%,rgba(11,51,43,0.28) 45%,rgba(11,51,43,0.42) 100%)">
+        </div>
+        {{-- Left-weighted light scrim so existing dark type stays readable (desktop) --}}
+        <div class="absolute inset-0"
+            style="background:linear-gradient(105deg,rgba(253,253,252,0.96) 0%,rgba(253,253,252,0.92) 40%,rgba(253,253,252,0.5) 68%,rgba(253,253,252,0.12) 100%)">
+        </div>
+        {{-- Top-weighted light scrim for stacked mobile layout --}}
+        <div class="absolute inset-0 lg:hidden"
+            style="background:linear-gradient(to bottom,rgba(253,253,252,0.94) 0%,rgba(253,253,252,0.82) 42%,rgba(253,253,252,0.25) 78%,rgba(253,253,252,0.08) 100%)">
+        </div>
+        <div class="absolute inset-0 pointer-events-none opacity-[0.12]"
+            style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%224%22 stitchTiles=%22stitch%22/><feColorMatrix type=%22saturate%22 values=%220%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.04%22/></svg>');background-size:200px">
+        </div>
     </div>
+
+    {{-- Soft orange accent glow (right, behind media card) --}}
     <div
-        class="absolute bottom-10 left-10 w-60 sm:w-80 h-60 sm:h-80 bg-[#0B332B]/5 rounded-full blur-3xl pointer-events-none -z-10 select-none">
+        class="absolute top-0 right-0 w-72 sm:w-[28rem] h-72 sm:h-[28rem] bg-[#F5850F]/10 rounded-full blur-3xl pointer-events-none z-[1] select-none">
     </div>
 
     {{-- ── MAIN CONTAINER ────────────────────────────────────────────────── --}}
-    <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pt-4 sm:pt-6 lg:pt-10">
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 pt-4 sm:pt-6 lg:pt-10">
 
         {{-- Grid Layout --}}
         <div
@@ -27,7 +46,7 @@
             <div class="relative z-20 hero-el space-y-4 sm:space-y-6">
 
                 {{-- Overline Badge --}}
-                <div
+                {{-- <div
                     class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#0B332B]/5 border border-[#0B332B]/12">
                     <span class="flex h-2 w-2 relative">
                         <span
@@ -38,7 +57,7 @@
                         class="text-[10px] sm:text-[11px] font-bold tracking-[0.18em] sm:tracking-[0.22em] uppercase text-[#0B332B]">
                         NMDPRA LICENSED · INTEGRATED ENERGY LEADER
                     </span>
-                </div>
+                </div> --}}
 
                 {{-- MAIN HEADLINE --}}
                 <h1
@@ -55,7 +74,7 @@
                 </h1>
 
                 {{-- SUBTEXT --}}
-                <p class="text-[#2A2A2A]/75 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl">
+                <p class="text-[#2A2A2A]/75 text-base lg:text-lg leading-relaxed max-w-xl">
                     Tier-1 petroleum product sourcing, GPS-tracked fleet haulage, and critical energy infrastructure
                     delivered seamlessly across all 36 Nigerian states.
                 </p>
@@ -65,9 +84,10 @@
 
                     {{-- Primary Pill CTA --}}
                     <button data-open-quote
-                        class="group inline-flex items-center justify-center gap-2.5 bg-gradient-to-r from-[#F5850F] to-[#e07708] text-white
+                        class="group inline-flex items-center justify-center gap-2.5 bg-[#F5850F] hover:bg-[#e07708] text-white
                          font-bold text-xs sm:text-sm uppercase tracking-wider
                          px-6 sm:px-8 py-3.5 sm:py-4 rounded-full w-full sm:w-auto
+                         shadow-lg shadow-[#F5850F]/25
                          hover:shadow-lg hover:shadow-[#F5850F]/30 hover:-translate-y-0.5 active:translate-y-0
                          transition-all duration-200 cursor-pointer">
                         <span>Request Supply</span>
@@ -93,7 +113,7 @@
 
                 {{-- Trust Badges --}}
                 <div
-                    class="pt-2 sm:pt-3 flex flex-wrap items-center gap-4 sm:gap-6 text-[11px] sm:text-xs text-[#2A2A2A]/70 font-semibold border-t border-[#0B332B]/8 max-w-xl">
+                    class="pt-2 sm:pt-3 flex flex-wrap items-center gap-4 sm:gap-6 text-base md:text-[13px] text-[#2A2A2A]/70 border-t border-[#0B332B]/8 max-w-xl">
                     <div class="flex items-center gap-2">
                         <svg class="w-4 h-4 text-[#F5850F] shrink-0" fill="currentColor" viewBox="0 0 20 20">
                             <path fill-rule="evenodd"
@@ -129,7 +149,7 @@
               Tab 1 — Supply: Large petroleum storage tanks / depot — universal industrial
             --}}
                         <img id="hero-dynamic-img"
-                            src="https://images.pexels.com/photos/37190872/pexels-photo-37190872.jpeg"
+                            src="https://images.pexels.com/photos/37190872/pexels-photo-37190872.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
                             alt="Alms Oil Petroleum Fuel Supply Operations"
                             class="w-full h-full object-cover object-center transition-all duration-700 transform scale-100" />
 
@@ -142,7 +162,7 @@
                         <div
                             class="absolute top-3 right-3 sm:top-4 sm:right-4 z-20 flex items-center gap-1 bg-black/50 backdrop-blur-md p-1 rounded-full border border-white/20">
                             <button
-                                onclick="switchHeroTab('supply', 'https://images.pexels.com/photos/37190872/pexels-photo-37190872.jpeg', 'Petroleum Fuel Supply Operations')"
+                                onclick="switchHeroTab('supply', 'https://images.pexels.com/photos/37190872/pexels-photo-37190872.jpeg?auto=compress&cs=tinysrgb&w=900&q=85', 'Petroleum Fuel Supply Operations')"
                                 id="tab-btn-supply"
                                 class="hero-tab-btn px-2.5 sm:px-3 py-1 text-[10px] sm:text-[11px] font-bold rounded-full transition-all bg-[#F5850F] text-white">
                                 Supply
@@ -226,84 +246,7 @@
         </div>
 
         {{-- BASE OPERATIONS STRIP --}}
-        <div class="mt-10 sm:mt-14 pt-6 sm:pt-8 border-t border-[#0B332B]/10">
 
-            <div class="flex items-center justify-between mb-4 sm:mb-5">
-                <h2 class="text-[10px] sm:text-xs font-bold tracking-[0.22em] uppercase text-[#0B332B]">
-                    Core Operational Pillars
-                </h2>
-                <span class="text-[11px] font-semibold text-[#F5850F]">Nationwide Coverage</span>
-            </div>
-
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
-
-                {{-- Pillar 1 — Petroleum Supply --}}
-                <a href="{{ route('services.petroleum') }}"
-                    class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
-                    <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-                        {{-- Petroleum storage tanks — universal industrial --}}
-                        <img src="https://images.pexels.com/photos/247763/pexels-photo-247763.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
-                            alt="Petroleum Supply"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <div class="min-w-0">
-                        <h3 class="text-xs font-bold text-[#0B332B] group-hover:text-[#F5850F] transition-colors">
-                            Petroleum Supply</h3>
-                        <p class="text-[11px] text-[#2A2A2A]/60 truncate mt-0.5">AGO · PMS · DPK · ATK</p>
-                    </div>
-                </a>
-
-                {{-- Pillar 2 — Haulage & Logistics --}}
-                <a href="{{ route('services.logistics') }}"
-                    class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
-                    <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-                        {{-- Tanker trucks on road — haulage logistics --}}
-                        <img src="https://images.pexels.com/photos/1117210/pexels-photo-1117210.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
-                            alt="Haulage & Logistics"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <div class="min-w-0">
-                        <h3 class="text-xs font-bold text-[#0B332B] group-hover:text-[#F5850F] transition-colors">
-                            Haulage &amp; Logistics</h3>
-                        <p class="text-[11px] text-[#2A2A2A]/60 truncate mt-0.5">GPS-tracked Fleet</p>
-                    </div>
-                </a>
-
-                {{-- Pillar 3 — Infrastructure --}}
-                <a href="{{ route('services.infrastructure') }}"
-                    class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
-                    <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-                        {{-- Oil refinery infrastructure / pipework --}}
-                        <img src="https://images.pexels.com/photos/3850512/pexels-photo-3850512.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
-                            alt="Energy Infrastructure"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <div class="min-w-0">
-                        <h3 class="text-xs font-bold text-[#0B332B] group-hover:text-[#F5850F] transition-colors">
-                            Infrastructure</h3>
-                        <p class="text-[11px] text-[#2A2A2A]/60 truncate mt-0.5">Tank Farms &amp; Stations</p>
-                    </div>
-                </a>
-
-                {{-- Pillar 4 — Engineering --}}
-                <a href="{{ route('services.engineering') }}"
-                    class="group flex items-center gap-3.5 p-3 sm:p-3.5 rounded-2xl bg-white border border-[#0B332B]/10 hover:border-[#F5850F] hover:shadow-md transition-all duration-200">
-                    <div class="w-12 h-12 rounded-xl overflow-hidden shrink-0 bg-[#0B332B]">
-                        {{-- Black engineer / industrial worker — African context --}}
-                        <img src="https://images.pexels.com/photos/3862132/pexels-photo-3862132.jpeg?auto=compress&cs=tinysrgb&w=120&q=80"
-                            alt="Engineering Services"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-                    </div>
-                    <div class="min-w-0">
-                        <h3 class="text-xs font-bold text-[#0B332B] group-hover:text-[#F5850F] transition-colors">
-                            Engineering</h3>
-                        <p class="text-[11px] text-[#2A2A2A]/60 truncate mt-0.5">Maintenance &amp; Procurement</p>
-                    </div>
-                </a>
-
-            </div>
-
-        </div>
 
         {{-- STATS STRIP --}}
         <div
