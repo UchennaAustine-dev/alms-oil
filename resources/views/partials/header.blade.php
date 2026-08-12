@@ -40,6 +40,11 @@
           Insights
         </a>
 
+        <a href="{{ route('team') }}"
+           class="hover:text-[#F5850F] transition-colors {{ request()->routeIs('team') ? 'text-[#F5850F]' : '' }}">
+          Our Team
+        </a>
+
       </nav>
 
       {{-- ── Right Action Group ── --}}
@@ -104,6 +109,7 @@
     <a href="{{ route('services.engineering') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Engineering Services</a>
     <a href="{{ route('services.infrastructure') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Energy Infrastructure</a>
     <a href="{{ route('blog.index') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Insights</a>
+    <a href="{{ route('team') }}" class="block text-base font-bold text-[#0B332B] hover:text-[#F5850F]">Our Team</a>
   </nav>
 
   <div class="p-6 border-t border-[#0B332B]/10">

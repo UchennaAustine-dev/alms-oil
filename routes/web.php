@@ -24,6 +24,7 @@ Route::post('/quote', [QuoteController::class, 'store'])->name('quote.store');
 
 // About & Services
 Route::view('/about', 'about')->name('about');
+Route::view('/team', 'team')->name('team');
 Route::view('/services/petroleum-supply', 'services.petroleum-supply')->name('services.petroleum');
 Route::view('/services/logistics', 'services.logistics')->name('services.logistics');
 Route::view('/services/engineering', 'services.engineering')->name('services.engineering');

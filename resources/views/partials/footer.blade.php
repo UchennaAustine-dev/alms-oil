@@ -139,6 +139,7 @@
             ['Engineering & Industrial',     route('services.engineering')],
             ['Energy Infrastructure',        route('services.infrastructure')],
             ['Insights & News',              route('blog.index')],
+            ['Our Team',                     route('team')],
             ['About Alms Oil',               route('about')],
             ['Contact Us',                   route('contact')],
           ] as [$label, $href])
