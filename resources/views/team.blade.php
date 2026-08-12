@@ -7,7 +7,7 @@
 {{-- ══════════════════════════════════════════════════
      HERO
 ══════════════════════════════════════════════════ --}}
-<section class="relative overflow-hidden bg-[#0B332B]" style="min-height:78vh">
+<section class="relative overflow-hidden bg-[#0B332B] min-h-[82vh] sm:min-h-[78vh] flex flex-col">
   <div class="absolute inset-0 z-0">
     <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1600&q=85"
          alt="Alms Oil leadership team"
@@ -20,10 +20,10 @@
   <div class="absolute inset-0 z-[1] pointer-events-none opacity-[0.15]"
        style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%224%22 stitchTiles=%22stitch%22/><feColorMatrix type=%22saturate%22 values=%220%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.04%22/></svg>');background-size:200px"></div>
   {{-- Ambient orange glow --}}
-  <div class="absolute top-0 right-0 w-[36rem] h-[36rem] pointer-events-none z-[1]"
+  <div class="absolute top-0 right-0 w-72 sm:w-[36rem] h-72 sm:h-[36rem] pointer-events-none z-[1]"
        style="background:radial-gradient(circle at 80% 20%,rgba(245,133,15,0.12) 0%,transparent 60%)"></div>
 
-  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-8 lg:px-12 flex flex-col justify-between" style="min-height:78vh">
+  <div class="relative z-10 flex-1 max-w-7xl mx-auto w-full px-4 sm:px-8 lg:px-12 flex flex-col justify-between">
 
     {{-- Breadcrumb --}}
     <div class="pt-8 sm:pt-10 flex items-center gap-2 text-[11px] text-white/40 font-medium flex-wrap">
@@ -35,17 +35,17 @@
     </div>
 
     {{-- Hero content --}}
-    <div class="py-12 sm:py-16 lg:py-20">
+    <div class="py-10 sm:py-14 lg:py-20">
       <div class="max-w-3xl">
-        <div class="inline-flex items-center gap-2 mb-6 px-3 py-1.5 rounded-full border border-white/15 bg-white/5">
+        <div class="inline-flex items-center gap-2 mb-5 sm:mb-6 px-3 py-1.5 rounded-full border border-white/15 bg-white/5">
           <div class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></div>
           <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-white/55">Leadership & Expertise</span>
         </div>
-        <h1 class="font-display font-bold text-white leading-[0.92] tracking-tight mb-6 sm:mb-8"
-            style="font-size:clamp(2.6rem,6vw,5.5rem)">
+        <h1 class="font-display font-bold text-white leading-[0.92] tracking-tight mb-5 sm:mb-8"
+            style="font-size:clamp(2.4rem,6vw,5.5rem)">
           The People<br/>Powering<br/><span style="color:#F5850F">Alms Oil.</span>
         </h1>
-        <p class="text-white/75 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-8 sm:mb-10">
+        <p class="text-white/75 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-7 sm:mb-10">
           Seasoned professionals with combined decades of Nigerian downstream energy experience — from bulk petroleum trading and fleet operations to HSE compliance and infrastructure engineering.
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
@@ -53,7 +53,7 @@
              class="group inline-flex items-center justify-center gap-3 bg-[#F5850F] hover:bg-[#e07708] text-white
                     font-bold text-xs sm:text-sm uppercase tracking-wide
                     pl-6 pr-5 py-4 rounded-full shadow-xl shadow-[#F5850F]/30
-                    hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200">
+                    hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto">
             Work With Our Team
             <span class="flex items-center justify-center w-7 h-7 rounded-full bg-white/20 group-hover:bg-white/30 transition-colors shrink-0">
               <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -62,7 +62,7 @@
             </span>
           </a>
           <a href="{{ route('about') }}"
-             class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wide hover:bg-white/10 transition-all duration-200">
+             class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-white/20 text-white font-bold text-xs sm:text-sm uppercase tracking-wide hover:bg-white/10 transition-all duration-200 w-full sm:w-auto">
             Our Story
           </a>
         </div>
@@ -70,10 +70,10 @@
     </div>
 
     {{-- Stats strip --}}
-    <div class="border-t border-white/8 py-5 flex flex-wrap items-center gap-x-8 gap-y-2">
-      @foreach(['20+ Years Combined Experience', '36-State Coverage', 'ISO 9001 Certified', 'NMDPRA Licensed'] as $item)
+    <div class="border-t border-white/8 py-5 flex flex-wrap items-center gap-x-6 gap-y-2.5">
+      @foreach(['20+ Years Experience', '36-State Coverage', 'ISO 9001 Certified', 'NMDPRA Licensed'] as $item)
         <div class="flex items-center gap-2">
-          <div class="w-1 h-1 rounded-full bg-[#F5850F]"></div>
+          <div class="w-1 h-1 rounded-full bg-[#F5850F] shrink-0"></div>
           <span class="text-[10px] font-bold uppercase tracking-[0.2em] text-white/40">{{ $item }}</span>
         </div>
       @endforeach
@@ -87,15 +87,16 @@
 ══════════════════════════════════════════════════ --}}
 <section class="bg-white border-b border-[#0B332B]/8 py-10 sm:py-12">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 lg:gap-10 items-start">
       <div class="lg:col-span-7">
         <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#0B332B]/40 mb-3">Who We Are</p>
-        <h2 class="font-display font-bold text-[#0B332B] leading-tight mb-0" style="font-size:clamp(1.4rem,2.8vw,2.2rem)">
+        <h2 class="font-display font-bold text-[#0B332B] leading-tight"
+            style="font-size:clamp(1.25rem,2.6vw,2.1rem)">
           Decades of downstream energy expertise, united by one mission — reliable supply, every time.
         </h2>
       </div>
       <div class="lg:col-span-5">
-        <p class="text-[#2A2A2A]/60 text-base leading-relaxed">
+        <p class="text-[#2A2A2A]/60 text-sm sm:text-base leading-relaxed">
           Every leader at Alms Oil brings hands-on experience from Nigeria's most demanding energy environments — NNPC subsidiaries, international trading desks, and critical infrastructure projects across all 36 states.
         </p>
       </div>
@@ -104,15 +105,15 @@
 </section>
 
 {{-- ══════════════════════════════════════════════════
-     LEADERSHIP — EXECUTIVE TIER
+     EXECUTIVE LEADERSHIP
 ══════════════════════════════════════════════════ --}}
 @php
 $executives = [
   [
     'name'     => 'Adewale Okonkwo',
     'title'    => 'Chief Executive Officer',
-    'dept'     => 'Energy Strategy & Downstream Operations',
-    'bio'      => 'Leads Alms Oil\'s strategic vision with 20+ years in Nigeria\'s petroleum downstream sector, including senior positions at NNPC subsidiaries and independent marketing companies. Instrumental in scaling our trading volume to 850M+ litres annually.',
+    'dept'     => 'Energy Strategy & Downstream',
+    'bio'      => 'Leads Alms Oil\'s strategic vision with 20+ years in Nigeria\'s petroleum downstream sector, including senior positions at NNPC subsidiaries. Instrumental in scaling our trading volume to 850M+ litres annually.',
     'img'      => 'https://images.pexels.com/photos/34687890/pexels-photo-34687890.jpeg?auto=compress&cs=tinysrgb&w=800&q=85',
     'initials' => 'AO',
     'tags'     => ['Petroleum Trading', 'Strategy', 'Downstream Ops'],
@@ -130,7 +131,7 @@ $executives = [
     'name'     => 'Tunde Adeniyi',
     'title'    => 'Technical Director',
     'dept'     => 'HSE & Quality Assurance',
-    'bio'      => 'Champions our ISO 9001:2015 quality management framework and all Health, Safety & Environment protocols across tank farms, fleet, and customer site operations. Certified HSE auditor with 15+ years in petroleum facility management.',
+    'bio'      => 'Champions our ISO 9001:2015 quality framework and all HSE protocols across tank farms, fleet, and customer site operations. Certified HSE auditor with 15+ years in petroleum facility management.',
     'img'      => 'https://images.pexels.com/photos/8487795/pexels-photo-8487795.jpeg?auto=compress&cs=tinysrgb&w=800&q=85',
     'initials' => 'TA',
     'tags'     => ['ISO 9001', 'HSE', 'Quality Management'],
@@ -139,7 +140,7 @@ $executives = [
     'name'     => 'Chisom Dike',
     'title'    => 'Commercial Director',
     'dept'     => 'Business Development & Trade',
-    'bio'      => 'Manages national commercial partnerships, bulk trading relationships, and West African market expansion. Previously led business development for a regional energy conglomerate, closing over ₦4B in annual supply contracts.',
+    'bio'      => 'Manages national commercial partnerships, bulk trading relationships, and West African market expansion. Previously led business development closing over ₦4B in annual supply contracts.',
     'img'      => 'https://images.pexels.com/photos/34690061/pexels-photo-34690061.jpeg?auto=compress&cs=tinysrgb&w=800&q=85',
     'initials' => 'CD',
     'tags'     => ['Business Dev', 'Trading', 'West Africa'],
@@ -147,63 +148,66 @@ $executives = [
 ];
 @endphp
 
-<section class="bg-[#FAFAF9] py-14 sm:py-20 lg:py-24">
+<section class="bg-[#FAFAF9] py-12 sm:py-18 lg:py-24">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
 
-    {{-- Section label --}}
-    <div class="flex items-center gap-4 mb-10 sm:mb-14">
-      <div>
-        <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#F5850F] mb-1">Executive Leadership</p>
-        <h2 class="font-display font-bold text-[#0B332B] tracking-tight leading-tight" style="font-size:clamp(1.5rem,3vw,2.4rem)">
-          Steering the company forward
-        </h2>
-      </div>
-      <div class="flex-1 h-px bg-[#0B332B]/8 ml-4 hidden sm:block"></div>
+    {{-- Section header --}}
+    <div class="mb-8 sm:mb-12">
+      <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#F5850F] mb-1.5">Executive Leadership</p>
+      <h2 class="font-display font-bold text-[#0B332B] tracking-tight leading-tight"
+          style="font-size:clamp(1.4rem,3vw,2.4rem)">
+        Steering the company forward
+      </h2>
     </div>
 
-    {{-- Executive cards grid --}}
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6">
+    {{-- Executive cards — 1 col mobile, 2 col sm, 4 col lg --}}
+    {{-- Stagger offset removed on mobile (sm:mt-8 → lg:mt-8) --}}
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
       @foreach($executives as $i => $member)
-        <div class="team-reveal group flex flex-col bg-white rounded-[1.75rem] overflow-hidden border border-[#0B332B]/8
-                    hover:border-[#F5850F]/35 hover:shadow-2xl hover:shadow-[#0B332B]/8 transition-all duration-400
-                    {{ $i % 2 === 1 ? 'sm:mt-8' : '' }}">
+        <div class="team-reveal group flex flex-col bg-white rounded-2xl sm:rounded-[1.75rem] overflow-hidden border border-[#0B332B]/8
+                    hover:border-[#F5850F]/35 hover:shadow-2xl hover:shadow-[#0B332B]/8 transition-all duration-300
+                    {{ $i % 2 === 1 ? 'lg:mt-8' : '' }}">
 
           {{-- Photo --}}
-          <div class="relative h-60 overflow-hidden bg-[#0B332B]">
-            <img src="{{ $member['img'] }}" alt="{{ $member['title'] }}"
+          <div class="relative h-52 sm:h-56 lg:h-60 overflow-hidden bg-[#0B332B] shrink-0">
+            <img src="{{ $member['img'] }}" alt="{{ $member['name'] }}"
                  class="w-full h-full object-cover object-top group-hover:scale-[1.06] transition-transform duration-700"
-                 style="filter:saturate(0.78) brightness(0.92)" />
-            {{-- Overlay on hover --}}
-            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-400"
+                 style="filter:saturate(0.78) brightness(0.92)" loading="lazy" />
+
+            {{-- Hover overlay — desktop only. On mobile we show bio below the card instead --}}
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block"
                  style="background:linear-gradient(to top,rgba(11,51,43,0.95) 0%,rgba(11,51,43,0.6) 52%,transparent 100%)"></div>
-            {{-- Bio on hover --}}
-            <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-400">
-              <p class="text-white/85 text-[13px] leading-relaxed line-clamp-4">{{ $member['bio'] }}</p>
+            <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 hidden sm:block">
+              <p class="text-white/85 text-[12px] leading-relaxed line-clamp-4">{{ $member['bio'] }}</p>
             </div>
-            {{-- Tag top-left --}}
+
+            {{-- Dept badge --}}
             <div class="absolute top-3 left-3 z-10">
-              <span class="inline-flex items-center bg-[#0B332B]/80 backdrop-blur-sm border border-white/15 text-[#F5850F] text-[9px] font-black uppercase tracking-[0.2em] px-2.5 py-1 rounded-full">
+              <span class="inline-flex items-center bg-[#0B332B]/80 backdrop-blur-sm border border-white/15 text-[#F5850F] text-[9px] font-black uppercase tracking-[0.2em] px-2.5 py-1 rounded-full leading-none">
                 {{ $member['dept'] }}
               </span>
             </div>
           </div>
 
           {{-- Card body --}}
-          <div class="flex flex-col flex-1 p-5">
+          <div class="flex flex-col flex-1 p-4 sm:p-5">
             <div class="flex items-start justify-between gap-3 mb-3">
               <div class="min-w-0">
-                <h3 class="font-display font-bold text-[#0B332B] text-base leading-snug group-hover:text-[#F5850F] transition-colors duration-200">
+                <h3 class="font-display font-bold text-[#0B332B] text-[15px] sm:text-base leading-snug group-hover:text-[#F5850F] transition-colors duration-200">
                   {{ $member['name'] }}
                 </h3>
-                <p class="text-[11px] font-bold text-[#2A2A2A]/45 mt-0.5 uppercase tracking-wider">{{ $member['title'] }}</p>
+                <p class="text-[10px] sm:text-[11px] font-bold text-[#2A2A2A]/45 mt-0.5 uppercase tracking-wider leading-tight">{{ $member['title'] }}</p>
               </div>
-              <div class="w-9 h-9 rounded-xl bg-[#0B332B] flex items-center justify-center text-white font-black text-[11px] shrink-0 group-hover:bg-[#F5850F] transition-colors duration-200">
+              <div class="w-8 h-8 sm:w-9 sm:h-9 rounded-xl bg-[#0B332B] flex items-center justify-center text-white font-black text-[10px] sm:text-[11px] shrink-0 group-hover:bg-[#F5850F] transition-colors duration-200">
                 {{ $member['initials'] }}
               </div>
             </div>
 
+            {{-- Bio always visible on mobile --}}
+            <p class="text-[12px] text-[#2A2A2A]/55 leading-relaxed mb-3 sm:hidden">{{ $member['bio'] }}</p>
+
             {{-- Tags --}}
-            <div class="flex flex-wrap gap-1.5 mt-auto pt-4 border-t border-[#0B332B]/8">
+            <div class="flex flex-wrap gap-1.5 mt-auto pt-3 border-t border-[#0B332B]/8">
               @foreach($member['tags'] as $tag)
                 <span class="text-[9px] font-bold uppercase tracking-wider px-2 py-1 rounded-full bg-[#0B332B]/5 text-[#0B332B]/50 group-hover:bg-[#F5850F]/8 group-hover:text-[#F5850F]/70 transition-colors duration-200">
                   {{ $tag }}
@@ -220,7 +224,7 @@ $executives = [
 </section>
 
 {{-- ══════════════════════════════════════════════════
-     MANAGEMENT TEAM — SECOND TIER
+     MANAGEMENT TEAM
 ══════════════════════════════════════════════════ --}}
 @php
 $managers = [
@@ -275,44 +279,42 @@ $managers = [
 ];
 @endphp
 
-<section class="bg-white py-14 sm:py-20 lg:py-24 border-t border-[#0B332B]/8">
+<section class="bg-white py-12 sm:py-18 lg:py-24 border-t border-[#0B332B]/8">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
 
-    <div class="flex items-center gap-4 mb-10 sm:mb-14">
-      <div>
-        <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#F5850F] mb-1">Management Team</p>
-        <h2 class="font-display font-bold text-[#0B332B] tracking-tight leading-tight" style="font-size:clamp(1.5rem,3vw,2.4rem)">
-          Experts across every function
-        </h2>
-      </div>
-      <div class="flex-1 h-px bg-[#0B332B]/8 ml-4 hidden sm:block"></div>
+    <div class="mb-8 sm:mb-12">
+      <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#F5850F] mb-1.5">Management Team</p>
+      <h2 class="font-display font-bold text-[#0B332B] tracking-tight leading-tight"
+          style="font-size:clamp(1.4rem,3vw,2.4rem)">
+        Experts across every function
+      </h2>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5">
       @foreach($managers as $member)
-        <div class="team-reveal group flex items-start gap-4 p-5 sm:p-6 rounded-2xl border border-[#0B332B]/8 bg-white
+        <div class="team-reveal group flex items-start gap-3 sm:gap-4 p-4 sm:p-5 rounded-2xl border border-[#0B332B]/8 bg-white
                     hover:border-[#F5850F]/30 hover:bg-[#FAFAF9] hover:shadow-lg hover:shadow-[#0B332B]/6 transition-all duration-300">
 
           {{-- Avatar --}}
           <div class="relative shrink-0">
-            <div class="w-16 h-16 rounded-2xl overflow-hidden border-2 border-[#0B332B]/8 group-hover:border-[#F5850F]/30 transition-colors duration-200">
-              <img src="{{ $member['img'] }}" alt="{{ $member['title'] }}"
+            <div class="w-14 h-14 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl overflow-hidden border-2 border-[#0B332B]/8 group-hover:border-[#F5850F]/30 transition-colors duration-200">
+              <img src="{{ $member['img'] }}" alt="{{ $member['name'] }}"
                    class="w-full h-full object-cover object-top group-hover:scale-110 transition-transform duration-500"
-                   style="filter:saturate(0.8)" />
+                   style="filter:saturate(0.8)" loading="lazy" />
             </div>
-            <div class="absolute -bottom-1 -right-1 w-5 h-5 rounded-full bg-[#F5850F] border-2 border-white flex items-center justify-center">
-              <div class="w-1.5 h-1.5 rounded-full bg-white"></div>
+            <div class="absolute -bottom-1 -right-1 w-4 h-4 sm:w-5 sm:h-5 rounded-full bg-[#F5850F] border-2 border-white flex items-center justify-center">
+              <div class="w-1 h-1 sm:w-1.5 sm:h-1.5 rounded-full bg-white"></div>
             </div>
           </div>
 
           {{-- Info --}}
           <div class="min-w-0 flex-1">
-            <p class="text-[9px] font-bold uppercase tracking-wider text-[#F5850F] mb-0.5">{{ $member['dept'] }}</p>
-            <h3 class="font-display font-bold text-[#0B332B] text-[15px] leading-snug group-hover:text-[#F5850F] transition-colors duration-200 mb-1">
+            <p class="text-[9px] font-bold uppercase tracking-wider text-[#F5850F] mb-0.5 leading-tight">{{ $member['dept'] }}</p>
+            <h3 class="font-display font-bold text-[#0B332B] text-[14px] sm:text-[15px] leading-snug group-hover:text-[#F5850F] transition-colors duration-200 mb-0.5">
               {{ $member['name'] }}
             </h3>
-            <p class="text-[11px] font-semibold text-[#2A2A2A]/45 uppercase tracking-wide mb-2">{{ $member['title'] }}</p>
-            <p class="text-[13px] text-[#2A2A2A]/55 leading-relaxed line-clamp-2">{{ $member['bio'] }}</p>
+            <p class="text-[10px] sm:text-[11px] font-semibold text-[#2A2A2A]/45 uppercase tracking-wide mb-2 leading-tight">{{ $member['title'] }}</p>
+            <p class="text-[12px] sm:text-[13px] text-[#2A2A2A]/55 leading-relaxed line-clamp-2">{{ $member['bio'] }}</p>
           </div>
 
         </div>
@@ -323,31 +325,33 @@ $managers = [
 </section>
 
 {{-- ══════════════════════════════════════════════════
-     VALUES STRIP
+     STATS STRIP
 ══════════════════════════════════════════════════ --}}
-<section class="bg-[#0B332B] py-14 sm:py-16 relative overflow-hidden">
+<section class="bg-[#0B332B] py-12 sm:py-16 relative overflow-hidden">
   {{-- Noise --}}
-  <div class="absolute inset-0 pointer-events-none"
-       style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%224%22 stitchTiles=%22stitch%22/><feColorMatrix type=%22saturate%22 values=%220%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.04%22/></svg>');background-size:200px;opacity:0.15"></div>
+  <div class="absolute inset-0 pointer-events-none opacity-[0.15]"
+       style="background-image:url('data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22200%22 height=%22200%22><filter id=%22n%22><feTurbulence type=%22fractalNoise%22 baseFrequency=%220.75%22 numOctaves=%224%22 stitchTiles=%22stitch%22/><feColorMatrix type=%22saturate%22 values=%220%22/></filter><rect width=%22100%25%22 height=%22100%25%22 filter=%22url(%23n)%22 opacity=%220.04%22/></svg>');background-size:200px"></div>
   {{-- Orange glow --}}
-  <div class="absolute top-0 left-0 w-96 h-96 pointer-events-none"
+  <div class="absolute top-0 left-0 w-80 h-80 pointer-events-none"
        style="background:radial-gradient(circle at 10% 0%,rgba(245,133,15,0.10) 0%,transparent 60%)"></div>
 
   <div class="relative max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+    {{-- 2 cols on mobile, 4 on lg --}}
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-10">
       @php
-        $values = [
-          ['850M+', 'Litres Traded', 'Across Nigeria and West Africa'],
-          ['36', 'States Covered', 'Full nationwide distribution network'],
-          ['15+', 'Years Operating', 'In Nigeria\'s downstream energy sector'],
-          ['98.5%', 'On-Time Delivery', 'GPS-tracked fleet performance rate'],
+        $stats = [
+          ['850M+', 'Litres Traded',    'Across Nigeria and West Africa'],
+          ['36',    'States Covered',   'Full nationwide distribution'],
+          ['15+',   'Years Operating',  'In Nigeria\'s downstream sector'],
+          ['98.5%', 'On-Time Delivery', 'GPS-tracked fleet performance'],
         ];
       @endphp
-      @foreach($values as [$number, $label, $sub])
-        <div class="team-reveal text-center sm:text-left">
-          <p class="font-display font-black text-[#F5850F] mb-1" style="font-size:clamp(2rem,4vw,3rem)">{{ $number }}</p>
-          <p class="font-bold text-white text-base mb-1">{{ $label }}</p>
-          <p class="text-white/40 text-sm leading-relaxed">{{ $sub }}</p>
+      @foreach($stats as [$number, $label, $sub])
+        <div class="team-reveal text-center lg:text-left">
+          <p class="font-display font-black text-[#F5850F] leading-none mb-1.5"
+             style="font-size:clamp(1.8rem,4vw,3rem)">{{ $number }}</p>
+          <p class="font-bold text-white text-sm sm:text-base mb-1 leading-snug">{{ $label }}</p>
+          <p class="text-white/40 text-xs sm:text-sm leading-relaxed">{{ $sub }}</p>
         </div>
       @endforeach
     </div>
@@ -357,27 +361,31 @@ $managers = [
 {{-- ══════════════════════════════════════════════════
      JOIN THE TEAM CTA
 ══════════════════════════════════════════════════ --}}
-<section class="bg-[#F8FAFC] border-t border-[#0B332B]/8 py-14 sm:py-18">
+<section class="bg-[#F8FAFC] border-t border-[#0B332B]/8 py-14 sm:py-16 lg:py-20">
   <div class="max-w-7xl mx-auto px-4 sm:px-8 lg:px-12">
-    <div class="max-w-3xl mx-auto text-center">
-      <div class="w-14 h-14 rounded-2xl bg-[#0B332B] flex items-center justify-center mx-auto mb-6">
-        <svg class="w-7 h-7 text-[#F5850F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
+    <div class="max-w-2xl mx-auto text-center">
+
+      <div class="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-[#0B332B] flex items-center justify-center mx-auto mb-5 sm:mb-6">
+        <svg class="w-6 h-6 sm:w-7 sm:h-7 text-[#F5850F]" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.75">
           <path stroke-linecap="round" stroke-linejoin="round" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"/>
         </svg>
       </div>
+
       <p class="text-[10px] font-black uppercase tracking-[0.28em] text-[#F5850F] mb-3">Careers</p>
-      <h2 class="font-display font-bold text-[#0B332B] leading-tight mb-4" style="font-size:clamp(1.5rem,3vw,2.4rem)">
+      <h2 class="font-display font-bold text-[#0B332B] leading-tight mb-4"
+          style="font-size:clamp(1.35rem,3vw,2.2rem)">
         Join a team that powers Nigeria's industry
       </h2>
-      <p class="text-[#2A2A2A]/55 text-base leading-relaxed mb-8 max-w-xl mx-auto">
-        We're growing. If you're passionate about petroleum operations, logistics management, engineering, or commercial energy trading — we'd love to hear from you.
+      <p class="text-[#2A2A2A]/55 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">
+        We're growing. If you're passionate about petroleum operations, logistics, engineering, or commercial energy trading — we'd love to hear from you.
       </p>
-      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
         <a href="{{ route('contact') }}"
            class="group inline-flex items-center justify-center gap-3 bg-[#F5850F] hover:bg-[#e07708] text-white
                   font-bold text-xs sm:text-sm uppercase tracking-wide
                   pl-6 pr-5 py-4 rounded-full shadow-lg shadow-[#F5850F]/25
-                  hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200 w-full sm:w-auto">
+                  hover:-translate-y-0.5 active:scale-[0.98] transition-all duration-200">
           Get In Touch
           <span class="flex items-center justify-center w-7 h-7 rounded-full bg-white/20 group-hover:bg-white/30 transition-colors shrink-0">
             <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5">
@@ -386,10 +394,11 @@ $managers = [
           </span>
         </a>
         <a href="{{ route('about') }}"
-           class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-[#0B332B]/15 text-[#0B332B] font-bold text-xs uppercase tracking-wider hover:bg-[#0B332B] hover:text-white hover:border-[#0B332B] transition-all duration-200 w-full sm:w-auto">
+           class="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full border border-[#0B332B]/15 text-[#0B332B] font-bold text-xs uppercase tracking-wider hover:bg-[#0B332B] hover:text-white hover:border-[#0B332B] transition-all duration-200">
           About Alms Oil
         </a>
       </div>
+
     </div>
   </div>
 </section>
@@ -401,7 +410,7 @@ $managers = [
 (function () {
   var style = document.createElement('style');
   style.textContent = [
-    '.team-reveal{opacity:0;transform:translateY(24px);transition:opacity 0.6s cubic-bezier(.22,1,.36,1),transform 0.6s cubic-bezier(.22,1,.36,1)}',
+    '.team-reveal{opacity:0;transform:translateY(22px);transition:opacity 0.58s cubic-bezier(.22,1,.36,1),transform 0.58s cubic-bezier(.22,1,.36,1)}',
     '.team-reveal.is-visible{opacity:1;transform:translateY(0)}'
   ].join('');
   document.head.appendChild(style);
@@ -411,10 +420,10 @@ $managers = [
       entries.forEach(function (e) {
         if (e.isIntersecting) { e.target.classList.add('is-visible'); ro.unobserve(e.target); }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -24px 0px' });
+    }, { threshold: 0.06, rootMargin: '0px 0px -16px 0px' });
 
     document.querySelectorAll('.team-reveal').forEach(function (el, i) {
-      el.style.transitionDelay = (i % 4) * 0.07 + 's';
+      el.style.transitionDelay = (i % 4) * 0.06 + 's';
       ro.observe(el);
     });
   } else {
