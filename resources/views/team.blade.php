@@ -1,6 +1,6 @@
 @extends('layouts.app')
 @section('title', 'Our Team | Alms Oil Nigeria Limited')
-@section('description', 'Meet the experienced leadership team driving Alms Oil Nigeria Limited — seasoned professionals with deep roots in Nigeria\'s downstream petroleum, logistics, and energy infrastructure sectors.')
+@section('description', 'Meet the leadership team at Alms Oil Nigeria Limited. Seasoned professionals with deep roots in Nigeria\'s downstream petroleum, logistics, and energy infrastructure sectors.')
 
 @section('content')
 
@@ -39,14 +39,14 @@
       <div class="max-w-3xl">
         <div class="inline-flex items-center gap-2 mb-5 sm:mb-6 px-3 py-1.5 rounded-full border border-white/15 bg-white/5">
           <div class="w-1.5 h-1.5 rounded-full bg-[#F5850F]"></div>
-          <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-white/55">Leadership & Expertise</span>
+          <span class="text-[10px] font-bold uppercase tracking-[0.25em] text-white/70">Leadership & Expertise</span>
         </div>
         <h1 class="font-display font-bold text-white leading-[0.92] tracking-tight mb-5 sm:mb-8"
             style="font-size:clamp(2.4rem,6vw,5.5rem)">
           The People<br/>Powering<br/><span style="color:#F5850F">Alms Oil.</span>
         </h1>
-        <p class="text-white/75 text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-7 sm:mb-10">
-          Seasoned professionals with combined decades of Nigerian downstream energy experience — from bulk petroleum trading and fleet operations to HSE compliance and infrastructure engineering.
+        <p class="text-white text-sm sm:text-base lg:text-lg leading-relaxed max-w-xl mb-7 sm:mb-10">
+          Seasoned professionals with decades of Nigerian downstream energy experience. From bulk petroleum trading and fleet operations to HSE compliance and infrastructure engineering.
         </p>
         <div class="flex flex-col sm:flex-row gap-3">
           <a href="{{ route('contact') }}"
@@ -92,12 +92,12 @@
         <p class="text-[10px] font-bold uppercase tracking-[0.25em] text-[#0B332B]/40 mb-3">Who We Are</p>
         <h2 class="font-display font-bold text-[#0B332B] leading-tight"
             style="font-size:clamp(1.25rem,2.6vw,2.1rem)">
-          Decades of downstream energy expertise, united by one mission — reliable supply, every time.
+          Decades of downstream energy expertise. One mission: reliable supply, every time.
         </h2>
       </div>
       <div class="lg:col-span-5">
         <p class="text-[#2A2A2A]/60 text-sm sm:text-base leading-relaxed">
-          Every leader at Alms Oil brings hands-on experience from Nigeria's most demanding energy environments — NNPC subsidiaries, international trading desks, and critical infrastructure projects across all 36 states.
+          Every leader at Alms Oil has hands-on experience from Nigeria's most demanding energy environments. NNPC subsidiaries, international trading desks, and infrastructure projects across all 36 states.
         </p>
       </div>
     </div>
@@ -113,7 +113,7 @@ $executives = [
     'name'     => 'Adewale Okonkwo',
     'title'    => 'Chief Executive Officer',
     'dept'     => 'Energy Strategy & Downstream',
-    'bio'      => 'Leads Alms Oil\'s strategic vision with 20+ years in Nigeria\'s petroleum downstream sector, including senior positions at NNPC subsidiaries. Instrumental in scaling our trading volume to 850M+ litres annually.',
+    'bio'      => 'Leads Alms Oil\'s strategic vision with 20+ years in Nigeria\'s petroleum downstream sector, including senior positions at NNPC subsidiaries. He has been instrumental in scaling our trading volume to 850M+ litres annually.',
     'img'      => 'https://images.pexels.com/photos/34687890/pexels-photo-34687890.jpeg?auto=compress&cs=tinysrgb&w=800&q=85',
     'initials' => 'AO',
     'tags'     => ['Petroleum Trading', 'Strategy', 'Downstream Ops'],
@@ -122,7 +122,7 @@ $executives = [
     'name'     => 'David Lawal',
     'title'    => 'Director of Operations',
     'dept'     => 'Logistics & Fleet Management',
-    'bio'      => 'Oversees the GPS-tracked tanker fleet and nationwide depot operations, maintaining our 98.5% on-time delivery benchmark across all 36 states. Formerly Head of Distribution at a major Lagos-based petroleum marketer.',
+    'bio'      => 'Oversees the GPS-tracked tanker fleet and nationwide depot operations, maintaining our 98.5% on-time delivery benchmark across all 36 states. He previously served as Head of Distribution at a major Lagos-based petroleum marketer.',
     'img'      => 'https://images.unsplash.com/photo-1522529599102-193c0d76b5b6?auto=format&fit=crop&w=800&q=80',
     'initials' => 'DL',
     'tags'     => ['Fleet Logistics', 'Operations', 'Supply Chain'],
@@ -131,7 +131,7 @@ $executives = [
     'name'     => 'Tunde Adeniyi',
     'title'    => 'Technical Director',
     'dept'     => 'HSE & Quality Assurance',
-    'bio'      => 'Champions our ISO 9001:2015 quality framework and all HSE protocols across tank farms, fleet, and customer site operations. Certified HSE auditor with 15+ years in petroleum facility management.',
+    'bio'      => 'Champions our ISO 9001:2015 quality framework and all HSE protocols across tank farms, fleet, and customer site operations. He is a certified HSE auditor with 15+ years in petroleum facility management.',
     'img'      => 'https://images.pexels.com/photos/8487795/pexels-photo-8487795.jpeg?auto=compress&cs=tinysrgb&w=800&q=85',
     'initials' => 'TA',
     'tags'     => ['ISO 9001', 'HSE', 'Quality Management'],
@@ -140,7 +140,7 @@ $executives = [
     'name'     => 'Chisom Dike',
     'title'    => 'Commercial Director',
     'dept'     => 'Business Development & Trade',
-    'bio'      => 'Manages national commercial partnerships, bulk trading relationships, and West African market expansion. Previously led business development closing over ₦4B in annual supply contracts.',
+    'bio'      => 'Manages national commercial partnerships, bulk trading relationships, and West African market expansion. She previously led business development at a regional energy conglomerate, closing over N4B in annual supply contracts.',
     'img'      => 'https://images.pexels.com/photos/34690061/pexels-photo-34690061.jpeg?auto=compress&cs=tinysrgb&w=800&q=85',
     'initials' => 'CD',
     'tags'     => ['Business Dev', 'Trading', 'West Africa'],
@@ -160,8 +160,6 @@ $executives = [
       </h2>
     </div>
 
-    {{-- Executive cards — 1 col mobile, 2 col sm, 4 col lg --}}
-    {{-- Stagger offset removed on mobile (sm:mt-8 → lg:mt-8) --}}
     <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
       @foreach($executives as $i => $member)
         <div class="team-reveal group flex flex-col bg-white rounded-2xl sm:rounded-[1.75rem] overflow-hidden border border-[#0B332B]/8
@@ -174,7 +172,7 @@ $executives = [
                  class="w-full h-full object-cover object-top group-hover:scale-[1.06] transition-transform duration-700"
                  style="filter:saturate(0.78) brightness(0.92)" loading="lazy" />
 
-            {{-- Hover overlay — desktop only. On mobile we show bio below the card instead --}}
+            {{-- Hover overlay on desktop. Bio shown inline on mobile. --}}
             <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 hidden sm:block"
                  style="background:linear-gradient(to top,rgba(11,51,43,0.95) 0%,rgba(11,51,43,0.6) 52%,transparent 100%)"></div>
             <div class="absolute inset-x-4 bottom-4 opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 hidden sm:block">
@@ -234,7 +232,7 @@ $managers = [
     'dept'     => 'Supply & Procurement',
     'img'      => 'https://images.pexels.com/photos/8487393/pexels-photo-8487393.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
     'initials' => 'EN',
-    'bio'      => 'Manages upstream product procurement and vendor relationships for all petroleum product categories.',
+    'bio'      => 'Handles upstream product procurement and vendor relationships across all petroleum product categories.',
   ],
   [
     'name'     => 'Fatima Bello',
@@ -242,7 +240,7 @@ $managers = [
     'dept'     => 'Finance & Compliance',
     'img'      => 'https://images.pexels.com/photos/3756679/pexels-photo-3756679.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
     'initials' => 'FB',
-    'bio'      => 'Oversees financial planning, trade settlement, and regulatory compliance with CBN and DPR reporting.',
+    'bio'      => 'Leads financial planning, trade settlement, and regulatory compliance across CBN and DPR reporting obligations.',
   ],
   [
     'name'     => 'Segun Adeleke',
@@ -250,7 +248,7 @@ $managers = [
     'dept'     => 'Tanker Operations',
     'img'      => 'https://images.pexels.com/photos/8487392/pexels-photo-8487392.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
     'initials' => 'SA',
-    'bio'      => 'Coordinates real-time dispatch, driver scheduling, and GPS telemetry monitoring for the tanker fleet.',
+    'bio'      => 'Runs real-time dispatch, driver scheduling, and GPS telemetry monitoring for the full tanker fleet.',
   ],
   [
     'name'     => 'Ngozi Obi',
@@ -258,7 +256,7 @@ $managers = [
     'dept'     => 'Infrastructure & Engineering',
     'img'      => 'https://images.pexels.com/photos/8093574/pexels-photo-8093574.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
     'initials' => 'NO',
-    'bio'      => 'Leads tank farm design, filling station setup projects, and all site engineering activities nationwide.',
+    'bio'      => 'Heads tank farm design, filling station setup projects, and site engineering activities nationwide.',
   ],
   [
     'name'     => 'Babatunde Yusuf',
@@ -266,7 +264,7 @@ $managers = [
     'dept'     => 'FCT & North Operations',
     'img'      => 'https://images.pexels.com/photos/5490235/pexels-photo-5490235.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
     'initials' => 'BY',
-    'bio'      => 'Manages all commercial and supply operations from the Federal Capital Territory desk, covering the North.',
+    'bio'      => 'Oversees all commercial and supply operations from the FCT desk, with coverage across northern Nigeria.',
   ],
   [
     'name'     => 'Amaka Eze',
@@ -274,7 +272,7 @@ $managers = [
     'dept'     => 'Commercial Desk',
     'img'      => 'https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
     'initials' => 'AE',
-    'bio'      => 'First point of contact for key accounts — ensuring smooth onboarding, contract renewals, and client satisfaction.',
+    'bio'      => 'Manages key accounts from day one, handling onboarding, contract renewals, and day-to-day client satisfaction.',
   ],
 ];
 @endphp
@@ -377,7 +375,7 @@ $managers = [
         Join a team that powers Nigeria's industry
       </h2>
       <p class="text-[#2A2A2A]/55 text-sm sm:text-base leading-relaxed mb-8 max-w-lg mx-auto">
-        We're growing. If you're passionate about petroleum operations, logistics, engineering, or commercial energy trading — we'd love to hear from you.
+        We're growing. If you're passionate about petroleum operations, logistics, engineering, or commercial energy trading, we'd love to hear from you.
       </p>
 
       <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-center gap-3">
